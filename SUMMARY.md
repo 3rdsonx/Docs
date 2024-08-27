@@ -4,18 +4,18 @@
 
 ## Getting Started
 
-* [Quickstart](getting-started/quickstart.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
+* [Account Setup](getting-started/publish-your-docs.md)
+* [API Authentication](getting-started/api-authentication.md)
+* [Your First Request](getting-started/your-first-request.md)
 
-## Basics
+## Browser Requests
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [Introduction](browser-requests/editor.md)
+* [API Endpoints](browser-requests/api-endpoints/README.md)
+  * [POST /browser/requests](browser-requests/api-endpoints/post-browser-requests.md)
+  * [GET /browser/requests](browser-requests/api-endpoints/get-browser-requests.md)
+* [Proxy Servers](browser-requests/proxy-servers.md)
 
-***
+## Your Account
 
-* [Page 1](page-1.md)
+* [Credits](your-account/credits.md)
