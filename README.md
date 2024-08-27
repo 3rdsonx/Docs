@@ -20,9 +20,11 @@ layout:
 
 # Welcome
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+In these docs we'll show you the easiest way to get started using the Gaffa Browser API.&#x20;
 
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+Gaffa is currently in it's very early stages, so we'd love to hear how we can improve our docs and API to make life easier for our users. If you have any questions or comments please [email us](https://emailto:support@gaffa.dev) or us [the support tool on our site](https://go.crisp.chat/chat/embed/?website\_id=87a5807c-14f5-4ed3-9fbe-3d161610357b).
+
+To stay up to date with latest developments, features and news on mission to support the development of revolutionary AI Agents, sign up to sporadic [newsletter](https://gaffa.dev/#newsletter) updates.
 
 ### Jump right in
 
