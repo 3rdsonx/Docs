@@ -20,7 +20,11 @@
   * [Type](browser-requests/actions/type.md)
   * [Click](browser-requests/actions/click.md)
   * [Print](browser-requests/actions/print.md)
-  * [Output](browser-requests/actions/output.md)
+  * [Output](browser-requests/actions/output/README.md)
+    * [Simplified DOM](browser-requests/actions/output/simplified-dom.md)
+    * [Static Site](browser-requests/actions/output/static-site.md)
+    * [Markdown](browser-requests/actions/output/markdown.md)
+  * [Action Error Messages](browser-requests/actions/action-error-messages.md)
 * [Proxy Servers](browser-requests/proxy-servers.md)
 * [Cache](browser-requests/cache.md)
 
