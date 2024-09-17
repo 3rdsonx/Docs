@@ -8,4 +8,4 @@ When making a [**Browser Request**](api-endpoints/post-browser-requests.md) you 
 \
 If another user of our service has requested the same URL with exactly the same parameters and actions as you in this chosen timeframe then the response will be returned to you immediately and the response will not be carried out on one of our browsers. If there are multiple identical requests in the given timeframe then the most recent will be returned.\
 \
-This will save you time waiting for the response, as well as credits because requests returned from the cache directly are billed [at a reduced rate](../your-account/credits-and-pricing.md).
+This will save you time waiting for the response, as well as credits because requests returned from the cache directly are billed [at a reduced rate](../account/credits-and-pricing.md).

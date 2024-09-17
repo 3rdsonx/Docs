@@ -8,7 +8,7 @@ description: >-
 
 ## Creating Keys
 
-Once your [account is approved](publish-your-docs.md), you will need to create an API key to send your requests to our API. \
+Once your [account is approved](broken-reference), you will need to create an API key to send your requests to our API. \
 \
 Go to your account [**Dashboard > API Keys**](https://gaffa.dev/dashboard/api-tokens) and create a new key with a name. Once the key is created, copy the value and you will immediately be free to start using it to make requests.
 

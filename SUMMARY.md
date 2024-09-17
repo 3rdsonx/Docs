@@ -4,7 +4,6 @@
 
 ## Getting Started
 
-* [Account Setup](getting-started/publish-your-docs.md)
 * [API Authentication](getting-started/api-authentication.md)
 * [Your First Request](getting-started/your-first-request.md)
 
@@ -28,6 +27,6 @@
 * [Proxy Servers](browser-requests/proxy-servers.md)
 * [Cache](browser-requests/cache.md)
 
-## Your Account
+## Your Account <a href="#account" id="account"></a>
 
-* [Credits and Pricing](your-account/credits-and-pricing.md)
+* [Credits and Pricing](account/credits-and-pricing.md)
