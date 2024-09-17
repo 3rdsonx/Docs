@@ -30,4 +30,4 @@
 
 ## Your Account
 
-* [Credits](your-account/credits.md)
+* [Credits and Pricing](your-account/credits-and-pricing.md)

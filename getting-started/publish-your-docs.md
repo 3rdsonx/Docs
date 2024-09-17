@@ -1,4 +1,10 @@
+---
+description: TO REMOVE
+---
+
 # Account Setup
+
+
 
 {% hint style="info" %}
 At this early stage of the Gaffa Browser API, we have created a short pre-approval process to carry out so we can ensure we minimize any unexpected scaling difficulties and can prioritize customers based on our current feature-set.&#x20;
