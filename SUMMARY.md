@@ -4,12 +4,13 @@
 
 ## Getting Started
 
-* [API Authentication](getting-started/api-authentication.md)
-* [Your First Request](getting-started/your-first-request.md)
+* [Creating an Account](getting-started/creating-an-account.md)
+* [Your First Browser Request](getting-started/your-first-browser-request.md)
 
 ## Browser Requests
 
 * [Introduction](browser-requests/editor.md)
+* [API Authentication](browser-requests/api-authentication.md)
 * [API Endpoints](browser-requests/api-endpoints/README.md)
   * [POST /browser/requests](browser-requests/api-endpoints/post-browser-requests.md)
   * [GET /browser/requests](browser-requests/api-endpoints/get-browser-requests.md)

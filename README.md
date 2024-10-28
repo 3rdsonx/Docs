@@ -1,5 +1,6 @@
 ---
 description: An introduction to the Gaffa Browser API
+icon: hand-wave
 cover: https://gitbookio.github.io/onboarding-template-images/header.png
 coverY: 0
 layout:
@@ -28,4 +29,4 @@ To stay up to date with latest developments, features and news on mission to sup
 
 ### Jump right in
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td>Create your first site</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Creating an account</strong></td><td>How to sign up and get your account approved and to start accessing the wider web.</td><td></td><td></td><td><a href="getting-started/creating-an-account.md">creating-an-account.md</a></td></tr><tr><td><strong>Your first browser request</strong></td><td>Quickly get started and make your first request to automate a website.</td><td></td><td></td><td><a href="getting-started/your-first-browser-request.md">your-first-browser-request.md</a></td></tr><tr><td><strong>Supported browser actions</strong></td><td>Read the list of actions you can can carry out in the browser using the API.</td><td></td><td></td><td><a href="browser-requests/actions/">actions</a></td></tr></tbody></table>
