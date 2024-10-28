@@ -1,20 +1,22 @@
 # Proxy Servers
 
-Rather than having the pain of finding and integrating a third party proxy service we allow you to change the location of your browser request with a single `location` parameter in the request. With a simple change your request will be routed through one of our partner proxy services in your desired location.
+Rather than having the pain of finding and integrating a third party proxy service we allow you to change the location of your browser request with a single `proxy_location` parameter in the request. With a simple change your request will be routed through one of our partner proxy services in your desired location.
 
 ## Available Locations
 
 We currently support the following locations:
 
-| Proxy Server Location       | Country Code |
-| --------------------------- | ------------ |
-| **United States (default)** | `us`         |
-| Ireland                     | `ie`         |
-| Singapore                   | `sg`         |
+| Proxy Server Location | Country Code |
+| --------------------- | ------------ |
+| United States         | `us`         |
+| Ireland               | `ie`         |
+| Singapore             | `sg`         |
 
 {% hint style="info" %}
 At the moment all our servers are in one location but we aim to introduce local machines to our proxy locations for a more realistic end-user load times. If this would interest you please contact support.
 {% endhint %}
+
+Not setting `proxy_location` or setting it to `null` will mean the request does not use a proxy server and will use a generic datacenter IP.
 
 ## IP Types
 
