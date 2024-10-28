@@ -1,8 +1,8 @@
-# Simplified DOM
+# Generate Simplified DOM
 
 When you're looking at the DOM of a web page, there's a lot of unnecessary data that can be discarded if you are only interested in the page's elements or looking to export the data into a LLM. \
 \
-The `simplified_dom` output format processes the HTML in the following way:
+The `generate_simplified_dom` output format processes the HTML in the following way:
 
 * Removes all links in the `head`
 * Removes all `script` nodes and links to scripts
