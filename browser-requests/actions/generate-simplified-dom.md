@@ -1,5 +1,7 @@
 # Generate Simplified DOM
 
+### Action name: `generate_simplified_dom`
+
 When you're looking at the DOM of a web page, there's a lot of unnecessary data that can be discarded if you are only interested in the page's elements or looking to export the data into a LLM. \
 \
 The `generate_simplified_dom` output format processes the HTML in the following way:
@@ -16,6 +18,22 @@ The `generate_simplified_dom` output format processes the HTML in the following 
 * Remove all `alternate` links
 * Remove all SVG paths
 * Remove empty text nodes and excessive spacing
+
+### Parameters
+
+See [universal parameters](./#universal-parameters).
+
+### Usage
+
+The following JSON captures the DOM of the page and simplifies it.
+
+```json
+"actions": [
+    {
+        "type": "generate_simplified_dom"
+    }
+]
+```
 
 {% hint style="info" %}
 We are actively working to improve this and to make this process more configurable - let us know if there's something you think we can improve.&#x20;

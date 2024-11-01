@@ -5,7 +5,7 @@
 ## Getting Started
 
 * [Creating an Account](getting-started/creating-an-account.md)
-* [Your First Browser Request](getting-started/your-first-browser-request.md)
+* [Your First Request](getting-started/your-first-request.md)
 
 ## Browser Requests
 
@@ -16,6 +16,7 @@
   * [GET /browser/requests](browser-requests/api-endpoints/get-browser-requests.md)
 * [Actions](browser-requests/actions/README.md)
   * [Capture DOM](browser-requests/actions/capture-dom.md)
+  * [Capture Screenshot](browser-requests/actions/capture-screenshot.md)
   * [Click](browser-requests/actions/click.md)
   * [Generate Markdown](browser-requests/actions/generate-markdown.md)
   * [Generate Simplified DOM](browser-requests/actions/generate-simplified-dom.md)

@@ -1,6 +1,6 @@
 # Creating an Account
 
-You can sign up to create a Gaffa account [here](https://accounts.gaffa.dev/sign-up?redirect\_url=https%3A%2F%2Fgaffa.dev%2F%2Fauth%2Fsign-in). After signing up you'll immediately be able to use the API to experiment on [our test site ](https://demo.gaffa.dev/)which simulates a range of automation scenarios. \
+You can sign up to create a Gaffa account [here](https://accounts.gaffa.dev/sign-up?redirect\_url=https%3A%2F%2Fgaffa.dev%2F%2Fauth%2Fsign-in). After signing up you'll immediately be able to use the API to experiment on [our demo site ](https://demo.gaffa.dev/)which simulates a range of automation scenarios. \
 
 
 **Using Gaffa on the open web**\
