@@ -36,8 +36,9 @@ When a browser request has completed, information on an action's execution
     "id": "", //a unique id given to the action by Gaffa
     "type": "capture_screenshot", //the type of the action
     "query": "", //a representation of the action in querystring format
-    "timestamp": "2024-11-01T18:08:54.9653402Z", //the UTC timestamp the action was executed
-    "output": "" //if the action has an output you will find a url for this here
+    "timestamp": "", //the UTC timestamp the action was executed
+    "output": "" //if the action has an output you will find a url for this here,
+    "error": "" //if the requesst fails the error message will be returned here
 }
 ```
 {% endcode %}
@@ -48,10 +49,8 @@ The Gaffa API supports the following actions detailed below. Click the "read mor
 
 ### Actions without outputs
 
-<table data-full-width="true"><thead><tr><th width="300">Type</th><th width="494">Description</th><th>Read More</th></tr></thead><tbody><tr><td><code>wait</code></td><td>Wait for a given time to elapse or an element to appear on page before proceeding to the next action.</td><td><a href="wait.md">Wait</a></td></tr><tr><td><code>click</code></td><td>Click on a given element</td><td><a href="click.md">Click</a></td></tr><tr><td><code>scroll</code></td><td>Scroll to a particular point on the page or,  in the case of pages with infinite scrolling, scroll until a given time has elapsed.</td><td><a href="scroll.md">Scroll</a></td></tr><tr><td><code>type</code></td><td>Type the provided text into a given element</td><td><a href="type.md">Type</a></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="300">Type</th><th width="494">Description</th><th>Read More</th></tr></thead><tbody><tr><td><code>click</code></td><td>Click on a given element</td><td><a href="click.md">Click</a></td></tr><tr><td><code>scroll</code></td><td>Scroll to a particular point on the page or,  in the case of pages with infinite scrolling, scroll until a given time has elapsed.</td><td><a href="scroll.md">Scroll</a></td></tr><tr><td><code>type</code></td><td>Type the provided text into a given element</td><td><a href="type.md">Type</a></td></tr><tr><td><code>wait</code></td><td>Wait for a given time to elapse or an element to appear on page before proceeding to the next action.</td><td><a href="wait.md">Wait</a></td></tr></tbody></table>
 
 ### Actions with outputs
 
-<table data-full-width="true"><thead><tr><th width="300">Type</th><th width="494">Description</th><th>Read More</th></tr></thead><tbody><tr><td><code>print</code></td><td>Print the web page to a PDF</td><td><a href="print.md">Print</a></td></tr><tr><td><code>capture_dom</code></td><td>Export the raw DOM page data</td><td></td></tr><tr><td><code>generate_simplified_dom</code></td><td>Generate a simplified version of the DOM</td><td></td></tr><tr><td><code>generate_static_site</code></td><td>Create a completely static version of the web page which can be accessed offline</td><td></td></tr><tr><td><code>generate_markdown</code></td><td>Convert the page into markdown</td><td></td></tr><tr><td><code>capture_screenshot</code></td><td>Capture a screenshot of the web page</td><td></td></tr></tbody></table>
-
-TODO: Order alphabetically
+<table data-full-width="true"><thead><tr><th width="300">Type</th><th width="494">Description</th><th>Read More</th></tr></thead><tbody><tr><td><code>capture_dom</code></td><td>Export the raw DOM page data</td><td><a href="capture-dom.md">DOM</a></td></tr><tr><td><code>capture_screenshot</code></td><td>Capture a screenshot of the web page</td><td><a href="capture-screenshot.md">Screenshot</a></td></tr><tr><td><code>generate_markdown</code></td><td>Convert the page into markdown</td><td><a href="generate-markdown.md">Markdown</a></td></tr><tr><td><code>generate_simplified_dom</code></td><td>Generate a simplified version of the DOM</td><td><a href="generate-simplified-dom.md">Simplified DOM</a></td></tr><tr><td><code>capture_snapshot</code></td><td>Create a completely static version of the web page which can be accessed offline</td><td><a href="capture-snapshot.md">Snapshot</a></td></tr><tr><td><code>print</code></td><td>Print the web page to a PDF</td><td><a href="print.md">Print</a></td></tr></tbody></table>

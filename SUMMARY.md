@@ -20,7 +20,7 @@
   * [Click](browser-requests/actions/click.md)
   * [Generate Markdown](browser-requests/actions/generate-markdown.md)
   * [Generate Simplified DOM](browser-requests/actions/generate-simplified-dom.md)
-  * [Generate Static Site](browser-requests/actions/generate-static-site.md)
+  * [Capture Snapshot](browser-requests/actions/capture-snapshot.md)
   * [Print](browser-requests/actions/print.md)
   * [Scroll](browser-requests/actions/scroll.md)
   * [Type](browser-requests/actions/type.md)
