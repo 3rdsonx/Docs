@@ -1,16 +1,10 @@
 ---
-icon: hand-wave
-description: An introduction to the Gaffa Browser API
-cover: https://gitbookio.github.io/onboarding-template-images/header.png
-coverY: 0
+description: What is Gaffa?
 layout:
-  cover:
-    visible: false
-    size: full
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
     visible: true
   outline:
@@ -19,14 +13,28 @@ layout:
     visible: false
 ---
 
-# Welcome
+# Introduction
 
-In these docs we'll show you the easiest way to get started using the Gaffa Browser API.&#x20;
+Gaffa is a powerful API for browser automation which allows you to control real web browsers at scale through a simple interface with no configuration necessary. We'll handle the complexities of managing infrastructure like virtual machines, proxies and caching so you can focus on building powerful and reliable web automation and AI applications!
 
-Gaffa is currently in it's very early stages, so we'd love to hear how we can improve our docs and API to make life easier for our users. If you have any questions or comments please [email us](https://emailto:support@gaffa.dev) or us [the support tool on our site](https://go.crisp.chat/chat/embed/?website\_id=87a5807c-14f5-4ed3-9fbe-3d161610357b).
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>API Playground</strong></td><td>Start experimenting with the Gaffa API right now.</td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Get Started</strong></td><td>The simple steps to get you started using Gaffa in your apps.</td><td><a href="get-started.md">get-started.md</a></td></tr><tr><td><strong>API Reference (TODO)</strong></td><td>Explore the API and docs for the finer details</td><td></td></tr></tbody></table>
 
-To stay up to date with latest developments, features and news on mission to support the development of revolutionary AI Agents, sign up to sporadic [newsletter](https://gaffa.dev/#newsletter) updates.
+## Key features
 
-### Jump right in
+Gaffa is ready to power your web automations:
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Creating an account</strong></td><td>How to sign up and get your account approved and to start accessing the wider web.</td><td></td><td></td><td><a href="getting-started/creating-an-account.md">creating-an-account.md</a></td></tr><tr><td><strong>Your first browser request</strong></td><td>Quickly get started and make your first request to automate a website.</td><td></td><td></td><td><a href="getting-started/your-first-request.md">your-first-request.md</a></td></tr><tr><td><strong>Supported browser actions</strong></td><td>Read the list of actions you can can carry out in the browser using the API.</td><td></td><td></td><td><a href="browser-requests/actions/">actions</a></td></tr></tbody></table>
+* **Simplicity** - there's no need to learn another new framework, Gaffa is accessible through a simple REST API - just tell it what site you want to visit and what actions you want to perform and it will be carried out as soon as you send the request.
+* **Real browsers** - headless browsers are popular but we make it simple to control real cloud-hosted browsers at scale which render JavaScript sites exactly as they would on a local machine, are harder to detect when doing scraping and allow full observability. We're also planning to allow you to go beyond just being able to control web browsers!
+* **Proxies** - you can easily choose to route your traffic through a network of residential proxy IP addresses to help avoid bot-detection on sites you are trying to automate.
+* **Scalable** - whether you want to control a single cloud browser or 100s in parallel with Gaffa you can do that easily without one thought about infrastructure management.
+* **Powerful data processing** - once you've accessed your desired site you can export your data in a constantly growing number of formats. If you want the [page content in markdown](features/browser-requests/actions/generate-markdown.md) to feed into a large language model or [an image](features/browser-requests/actions/capture-screenshot.md) to feed into a vision modal we can help.
+
+## Ready to work with Gaffa?
+
+{% content-ref url="get-started.md" %}
+[get-started.md](get-started.md)
+{% endcontent-ref %}
+
+## Stay up to date
+
+We'll be sporadically announcing updates and new features in our newsletter - [sign up here](https://gaffa.dev/#newsletter).
