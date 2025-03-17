@@ -34,7 +34,7 @@ The request below uses the [POST endpoint](../../../api-reference/post-v1-browse
       },
       {
         "type": "wait",
-        "selector": "[data-testid^=\"product\"]",
+        "selector": "[data-testid^=\"product-1\"]",
         "timeout": 5000
       },
       {

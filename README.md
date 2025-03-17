@@ -17,7 +17,7 @@ layout:
 
 Gaffa is a powerful API for browser automation which allows you to control real web browsers at scale through a simple interface with no configuration necessary. We'll handle the complexities of managing infrastructure like virtual machines, proxies and caching so you can focus on building powerful and reliable web automation and AI applications!
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>API Playground</strong></td><td>Start experimenting with the Gaffa API right now.</td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Get Started</strong></td><td>The simple steps to get you started using Gaffa in your apps.</td><td><a href="get-started.md">get-started.md</a></td></tr><tr><td><strong>API Reference (TODO)</strong></td><td>Explore the API and docs for the finer details</td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>API Playground</strong></td><td>Start experimenting with the Gaffa API right now.</td><td><a href="https://gaffa.dev/dashboard/playground">https://gaffa.dev/dashboard/playground</a></td></tr><tr><td><strong>Get Started</strong></td><td>The simple steps to get you started using Gaffa in your apps.</td><td><a href="get-started.md">get-started.md</a></td></tr><tr><td><strong>API Reference</strong></td><td>Explore the API and docs for the finer details</td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
 
 ## Key features
 

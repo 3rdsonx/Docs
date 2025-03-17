@@ -16,11 +16,11 @@ When [making a Browser Request](../../../api-reference/post-v1-browser-request.m
 
 All actions have the following parameters:
 
-<table data-full-width="false"><thead><tr><th width="226">Name</th><th width="130">Type</th><th width="108" data-type="checkbox">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>type</code></td><td><code>string</code></td><td>true</td><td>The type name of the action.</td></tr><tr><td><code>continue_on_fail</code></td><td><code>boolean</code></td><td>false</td><td>Should execution of further actions continue or throw an error if this action fails. <br><strong>Default:</strong> <code>true</code></td></tr><tr><td><code>customId</code></td><td><code>string</code></td><td>false</td><td>A customId to help you find the action in the response.<br><strong>Default:</strong> <code>null</code></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="226">Name</th><th width="130">Type</th><th width="108" data-type="checkbox">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>type</code></td><td><code>string</code></td><td>true</td><td>The type name of the action.</td></tr><tr><td><code>continue_on_fail</code></td><td><code>boolean</code></td><td>false</td><td>Should execution of further actions continue or throw an error if this action fails. <br><strong>Default:</strong> <code>false</code></td></tr><tr><td><code>customId</code></td><td><code>string</code></td><td>false</td><td>A customId to help you find the action in the response.<br><strong>Default:</strong> <code>null</code></td></tr></tbody></table>
 
 #### Action Execution
 
-Actions are carried out in the order they are submitted. Every action type has a `continue_on_fail` parameter which, if set to `false` will cause execution to finish if any action failed. Setting this to `true` ensures that all actions are carried out.
+Actions are carried out in the order they are submitted. Every action type has a `continue_on_fail` parameter which defaults to `false`, this means that if any action fails the execution of the browser request ends and an error will be returned. Setting `continue_on_fail`  to `true` ensures that all actions are carried out, regardless of previous action results and an error will not be returned.
 
 #### Custom Id
 

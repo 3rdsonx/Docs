@@ -24,6 +24,7 @@ You can read more about this particular example and how you can run it right now
   "proxy_location": null,
   "async": false,
   "max_cache_age": 0,
+  "max_media_bandwidth": null,
   "settings": {
     "record_request": false,
     "actions": [
@@ -61,6 +62,7 @@ Not setting a `proxy_location` will mean the request does not use a proxy server
 | United States         | `us`         |
 | Ireland               | `ie`         |
 | Singapore             | `sg`         |
+| France                | `fr`         |
 
 {% hint style="info" %}
 At the moment all our servers are in one location but we aim to introduce local machines to our proxy locations for a more realistic end-user load times. If this would interest you please contact support.
@@ -106,9 +108,35 @@ Recording requests comes at an [additional cost](../../credits-and-pricing.md).
 
 ***
 
+## Max Media Bandwidth
+
+If you are using Gaffa on a site with lots of images and videos and more interested in the text data on the page, you can cap how much data a page loads in MB using the `max_media_bandwidth` setting. This makes your automation faster and prevents spending credits on data you aren't interested in.\
+\
+With the `max_media_bandwidth` value set, Gaffa monitors data being downloaded by the page and when downloaded data exceeds the given number of MB, all further downloads of images or video will be cancelled. \
+\
+`max_media_bandwidth` defaults to `null` meaning downloads are not capped.
+
+{% hint style="info" %}
+Setting a value of 0 will cause no images to load which can work on some sites but on others this could lead to the site thinking you are using an ad blocker.
+{% endhint %}
+
+***
+
+## Time Limit
+
+Using the setting `time_limit` caps the maximum running time of the request in milliseconds. If this time expires all incomplete actions will be cancelled and the request will return an error. This cap has to be less than the maximum request running time dictated by your plan and if not set, will default to this value.
+
+***
+
 ## Actions
 
 We currently support ten different types of actions which you can read more about [here](actions/).
+
+***
+
+## Stealth
+
+We believe your AI Agents should be able to use the internet exactly how humans would. Gaffa can help you get access to sites with some of the most challenging anti-bot restrictions using a combination of proxies, human-like behavior, captcha solving and a custom browser implementation. We handle and maintain all of that so you can focus on building your solution!&#x20;
 
 ***
 

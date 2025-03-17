@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [Get Started](get-started.md)
 * [Credits and Pricing](credits-and-pricing.md)
+* [Changelog](changelog.md)
 
 ## Features
 

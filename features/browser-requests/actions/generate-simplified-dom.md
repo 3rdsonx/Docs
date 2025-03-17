@@ -13,7 +13,6 @@ The `generate_simplified_dom` output format processes the HTML in the following 
 * Remove all links to stylesheets
 * Remove all `noscript` elements outside of the body
 * Finds all `hrefs` with query strings and removes the query strings
-* Removes all `class` attributes
 * Important `meta` tags are kept, all others are removed
 * Remove all `alternate` links
 * Remove all SVG paths

@@ -2,16 +2,34 @@
 
 **Type**: `scroll`
 
-Request that the browser scrolls to a certain point on the page or, in the case of pages with infinite scrolling, scrolls for a particular amount of time.
+Request that the browser scrolls to a certain point on the page or, in the case of pages with infinite scrolling, scrolls for a particular amount of time.&#x20;
 
 ### Parameters
 
-<table data-full-width="false"><thead><tr><th width="215">Name</th><th width="130">Type</th><th width="108" data-type="checkbox">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>percentage</code></td><td><code>integer</code></td><td>false</td><td>The percentage the page should scroll up or down (+/-) <strong>Default: 100% (scroll to bottom)</strong></td></tr><tr><td><code>timeout</code></td><td><code>integer</code></td><td>false</td><td>The maximum amount of time the page should be scrolled for. <strong>Default: 20,000 (20s)</strong><br></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="215">Name</th><th width="130">Type</th><th width="108" data-type="checkbox">Required</th><th>Description</th></tr></thead><tbody><tr><td><code>percentage</code></td><td><code>integer</code></td><td>true</td><td>The percentage the page should scroll up or down (+/-) <br><strong>Range: [-100 - 0 - 100]</strong><br><strong>Default: 100 (% - scroll to bottom)</strong></td></tr><tr><td><code>wait_time</code></td><td>integer</td><td>false</td><td>After arriving at the desired scroll location this the time Gaffa should monitor for changes to the page height before marking the action as succeeded. Read more <a href="scroll.md#wait-time">below</a>.<br><strong>Default: 0</strong></td></tr><tr><td><code>max_scroll_time</code></td><td><code>integer</code></td><td>false</td><td>The maximum amount of time the page should be scrolled for, in milliseconds. After this time passes, the action will be cancelled. This doesn't cause the action to fail.<br><strong>Default: 20,000 (20s)</strong><br></td></tr><tr><td><code>scroll_speed</code></td><td><code>string</code></td><td>false</td><td>The speed which the page should scroll to the desired point. You can read more about this <a href="scroll.md#scroll-speed">below</a>.<br><strong>Default:</strong> <code>medium</code><br><strong>Accepted</strong>: [<code>slow</code>, <code>medium</code>, <code>instant</code>]</td></tr><tr><td><code>interval</code></td><td><code>integer</code></td><td>false</td><td>The amount of time, in milliseconds, that scrolling should pause between scroll events. Read more about this <a href="scroll.md#scroll-speed-and-interval">below</a>.<br><strong>Default</strong>: 0</td></tr></tbody></table>
 
 See [universal parameters](./#universal-parameters).
 
+### Scroll Speed & Interval
+
+Gaffa gives you a flexibility about how fast you scroll down the page which can be really useful to get around restrictions enforced by some sites which detect and limit fast scrolling. By experimenting with `scroll_speed` and `interval` you will be able to create the perfect scrolling action for your scenario. The speed settings are as follows:
+
+* `instant`- the page will smoothly scroll to the desired position immediately, useful for sites with no rate limits or loading events caused by scroll actions.
+* `medium` - human-like scrolling at a normal speed to the desired position. Gaffa will scroll in much the same way as you would using a mouse.
+* `slow`- human-like scrolling at a very slow speed to the desired position. The speed is comparable to scrolling whilst reading a page.
+
+`interval`allows you to adjust the scroll speed further by inserting pauses between scroll events.
+
 {% hint style="info" %}
-Sites that use more advanced bot detection often use scroll events to detect unusual activity on their site, rather than immediately landing on a page and scrolling to the bottom without any interaction our  platform scrolls naturally, in a human-like manner to the desired location on the page.
+We've found some sites with infinite scrolling and strict rate limits respond better to `immediate` speed scroll events to the bottom of the page with large `intervals`between these scrolls to keep within rate limits.
+{% endhint %}
+
+### Wait Time
+
+If `wait_time` is set to 0 and Gaffa arrives at the desired location then Gaffa will immediately mark the action as succeeded. However, if another value is set then the page will be monitored for the desired amount of time to check for further expansions. If, during this period, the page expands again then Gaffa will continue scrolling to the desired location and the wait will reset.
+
+{% hint style="info" %}
+This can be really useful if you find that the site takes some time to load more items when you reach the bottom of the page and more will be loaded after the action has suceeded.
 {% endhint %}
 
 ### Usage
@@ -24,21 +42,24 @@ The following code will scroll half way down the page.
 "actions": [
       {
         "name": "scroll",
-        "percentage": 50
+        "percentage": 50,
       }
 ]
 ```
 
 #### Scroll an infinitely scrolling webpage
 
-The following code will scroll to the bottom of the page and then keep scrolling when new content loads for a maximum of 15 seconds.
+The following code will scroll to the bottom of the page and then keep scrolling when new content loads for a maximum of 25 seconds, waiting 1 second for new content and scrolling at a slow pace with 1 second between scroll actions.
 
 ```json
 "actions": [
       {
         "name": "scroll",
-        "infinite": true,
-        "timeout": 15000
+        "percentage": 100,
+        "scroll_speed": "slow",
+        "max_scroll_time": 25000,
+        "interval": 1000,
+        "wait_time": 1000
       }
 ]
 ```
