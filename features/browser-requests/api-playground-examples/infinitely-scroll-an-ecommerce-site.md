@@ -40,7 +40,7 @@ The request below uses the [POST endpoint](../../../api-reference/post-v1-browse
       {
         "type": "scroll",
         "percentage": 100,
-        "timeout": 20000
+        "max_scroll_time": 20000
       }
     ]
   }
