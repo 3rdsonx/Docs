@@ -2,6 +2,14 @@
 
 Keep up to date with Gaffa's changes. To be the first to hear about changes subscribe to our [newsletter](https://gaffa.dev/#newsletter).
 
+## April 2025
+
+02.04.2025
+
+* **Subscriptions and Credits**
+  * You can now buy "pay as you go" credits to be used without a subscription, or to complement the credits in your subscription for larger one-off jobs.
+  * We've adjusted the plans and credits slightly, take a look at the [updated subscriptions](https://gaffa.dev/#pricing).
+
 ## March 2025
 
 ### 17.03.2025
