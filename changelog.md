@@ -9,6 +9,8 @@ Keep up to date with Gaffa's changes. To be the first to hear about changes subs
 * **Subscriptions and Credits**
   * You can now buy "pay as you go" credits to be used without a subscription, or to complement the credits in your subscription for larger one-off jobs.
   * We've adjusted the plans and credits slightly, take a look at the [updated subscriptions](https://gaffa.dev/#pricing).
+* **Actions**
+  * We've edited the [Click](features/browser-requests/actions/click.md), [Type ](features/browser-requests/actions/type.md)and [Wait](features/browser-requests/actions/wait.md) actions to better support finding elements to interact with or wait for inside iframes with no extra configuration necessary.
 
 ## March 2025
 
