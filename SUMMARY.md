@@ -8,6 +8,7 @@
 
 * [Browser Requests](features/browser-requests/README.md)
   * [Actions](features/browser-requests/actions/README.md)
+    * [Capture Cookies](features/browser-requests/actions/capture-cookies.md)
     * [Capture DOM](features/browser-requests/actions/capture-dom.md)
     * [Capture Screenshot](features/browser-requests/actions/capture-screenshot.md)
     * [Capture Element](features/browser-requests/actions/capture-element.md)
