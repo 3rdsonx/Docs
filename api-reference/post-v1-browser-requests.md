@@ -1,4 +1,4 @@
-# POST v1/browser/request
+# POST v1/browser/requests
 
 {% hint style="info" %}
 For more information on browser requests, [see here](../features/browser-requests/).
@@ -6,6 +6,6 @@ For more information on browser requests, [see here](../features/browser-request
 
 The following endpoint creates a browser request and either runs it synchronously or returns immediately with an ID so you can check it status later using this endpoint.
 
-{% openapi src="https://api.gaffa.dev/swagger.json" path="/v1/browser/requests" method="post" %}
-[https://api.gaffa.dev/swagger.json](https://api.gaffa.dev/swagger.json)
-{% endopenapi %}
+{% openapi-operation spec="gaffa-api" path="/v1/browser/requests" method="post" %}
+[Broken link](broken-reference)
+{% endopenapi-operation %}

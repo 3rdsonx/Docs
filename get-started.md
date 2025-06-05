@@ -1,5 +1,4 @@
 ---
-icon: hand-wave
 description: >-
   An introduction to the Gaffa Browser API. Learn how you can get started
   building fast, powerful web automations!

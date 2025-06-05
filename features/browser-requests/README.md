@@ -12,7 +12,7 @@ There's absolutely zero configuration needed and you can interact with Gaffa fro
 
 ## Example request
 
-Running a new browser request is as simple as sending the following [POST body to our endpoint](../../api-reference/post-v1-browser-request.md).  Below, you can see the url ([our demo site](https://demo.gaffa.dev)) and a list of actions which instruct Gaffa to wait for a table to load and print the page to PDF. &#x20;
+Running a new browser request is as simple as sending the following [POST body to our endpoint](../../api-reference/post-v1-browser-requests.md).  Below, you can see the url ([our demo site](https://demo.gaffa.dev)) and a list of actions which instruct Gaffa to wait for a table to load and print the page to PDF. &#x20;
 
 {% hint style="info" %}
 You can read more about this particular example and how you can run it right now in our API Playground [here](api-playground-examples/export-web-page-to-pdf.md)

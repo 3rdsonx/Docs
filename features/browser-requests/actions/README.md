@@ -1,6 +1,6 @@
 # Actions
 
-When [making a Browser Request](../../../api-reference/post-v1-browser-request.md) you can specify a list of actions you wish for us to carry out on the requested web page. These actions conform to the following format:
+When [making a Browser Request](../../../api-reference/post-v1-browser-requests.md) you can specify a list of actions you wish for us to carry out on the requested web page. These actions conform to the following format:
 
 {% code overflow="wrap" fullWidth="false" %}
 ```json

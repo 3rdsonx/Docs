@@ -12,7 +12,7 @@ Filling forms is tedious, Gaffa can be used to fill out a form in a human-like m
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-request.md) to open the demo site on the form simulator page with some sections pre-filled (for speed). After typing in the required information and clicking submit, Gaffa waits for the success dialog to show before returning a video of the interaction.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the form simulator page with some sections pre-filled (for speed). After typing in the required information and clicking submit, Gaffa waits for the success dialog to show before returning a video of the interaction.
 
 ```json
 {

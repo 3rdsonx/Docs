@@ -13,7 +13,7 @@ Gaffa converts web pages to clean markdown, stripping away styling, scripts, and
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-request.md) to open the demo site on the article simulator, wait for the article to load and then generate a markdown from the page's content which you can download for use in your program.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the article simulator, wait for the article to load and then generate a markdown from the page's content which you can download for use in your program.
 
 ```json
 {

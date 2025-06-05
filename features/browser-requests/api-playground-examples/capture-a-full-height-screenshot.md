@@ -12,7 +12,7 @@ Gaffa can also capture screenshots at any point during your interaction for use 
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-request.md) to open the demo site on the ecommerce page with 20 items, wait for and dismiss the dialog, scroll to the bottom of the page and capture a full height screenshot.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the ecommerce page with 20 items, wait for and dismiss the dialog, scroll to the bottom of the page and capture a full height screenshot.
 
 ```json
 {
