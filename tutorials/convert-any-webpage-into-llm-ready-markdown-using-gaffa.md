@@ -8,7 +8,7 @@ By the end of this guide, you’ll be able to:
 * Extract clean page content.
 * Generate structured markdown suitable for LLM-based Q\&A or summarization.
 
-## **Prerequistes**
+### **Prerequistes**
 
 1. Install Python 3.10 or newer.
 2. Create a virtual environment
@@ -30,7 +30,7 @@ GAFFA_API_KEY=your_gaffa_api_key
 OPENAI_API_KEY=your_openai_api_key
 ```
 
-## Convert a webpage to Markdown
+### Convert a webpage to Markdown
 
 In the code below, we define a function that takes a URL as input, makes a POST request to the Gaffa API, invoking the [generate\_markdown](../features/browser-requests/actions/generate-markdown.md) action, which uses the browser rendering engine to extract the main content of the page and convert it into markdown.
 
@@ -85,7 +85,7 @@ def fetch_markdown_with_gaffa(url):
 ```
 {% endcode %}
 
-## Ask questions using OpenAI
+### Ask questions using OpenAI
 
 Now that we have the markdown content, we can ask questions about it using the OpenAI API. The function below takes the markdown content and a question as input and uses the OpenAI API to generate a summary based on the provided content. In this case, we are using the [gpt-3.5-turbo](https://platform.openai.com/docs/models) model, but you can choose any other model.
 
@@ -111,7 +111,7 @@ def ask_question(markdown, question):
 
 The markdown becomes the model’s context, enabling accurate answers about the original web content.
 
-## User Interaction and Execution
+### User Interaction and Execution
 
 Having defined the functions, we can now create a simple command-line interface that allows users to input a URL and ask questions about the content.
 
@@ -138,11 +138,11 @@ def main():
 ```
 {% endcode %}
 
-## Full Script
+### Full Script
 
 The full script is available to download from the [Gaffa Python Examples GitHub repo](https://github.com/GaffaAI/GaffaPythonExamples/blob/main/scripts/WebpageToMarkdown/markdown_generator.py).
 
-## Running the Script
+### Running the Script
 
 To run the script, simply execute it in your terminal:
 

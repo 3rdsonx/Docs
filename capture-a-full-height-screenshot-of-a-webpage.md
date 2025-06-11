@@ -9,7 +9,7 @@ In just a few lines of JSON inlined in a single cURL command, you can automate:
 
 All without installing Playwright or managing headless browsers, Gaffa handles it for you server-side via the[ Browser Requests API](https://gaffa-1.gitbook.io/gaffa/features/browser-requests).
 
-## Prerequisites
+### Prerequisites
 
 * A valid Gaffa API key
 * A simple HTTP client (cURL, Postman, axios, etc.).
@@ -18,7 +18,7 @@ All without installing Playwright or managing headless browsers, Gaffa handles i
 
 {% stepper %}
 {% step %}
-## Execute the Request
+### Execute the Request
 
 Use cURL with the full JSON payload inlined to ensure Gaffa receives exactly what you intend:
 
@@ -71,7 +71,7 @@ Replace YOUR\_API\_KEY with your actual token from your [Dashboard.](https://gaf
 {% endstep %}
 
 {% step %}
-## Retrieve Your Screenshot
+### Retrieve Your Screenshot
 
 A successful response returns JSON like:
 
@@ -146,7 +146,7 @@ Within the list of actions you'll be able to see the capture\_screenshot action 
 
 If you don't want to use cURL, you can also run this query in the [Gaffa API Playground](https://gaffa.dev/dashboard/playground) which is an easy way to get started.
 
-## Use Cases
+### Use Cases
 
 Gaffa's screenshot action could be used for a huge number of use cases, but here are a few ideas:
 
