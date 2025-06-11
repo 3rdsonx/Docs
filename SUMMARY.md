@@ -45,3 +45,7 @@
 ## Tutorials
 
 * [Convert any webpage into LLM-ready Markdown using Gaffa](tutorials/convert-any-webpage-into-llm-ready-markdown-using-gaffa.md)
+
+***
+
+* [Capture a Full-Height Screenshot of a Webpage](capture-a-full-height-screenshot-of-a-webpage.md)
