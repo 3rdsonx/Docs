@@ -10,7 +10,7 @@
 
 Use AI to parse web content from text into a pre-defined data schema and return it as a JSON object.&#x20;
 
-_Currently this feature only works with online PDFs but we are working to expand it to webpages._&#x20;
+_This feature currently works for online PDFs and web page text._&#x20;
 
 ### Parameters
 
