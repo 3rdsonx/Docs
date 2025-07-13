@@ -49,3 +49,7 @@
 ***
 
 * [Capture a Full-Height Screenshot of a Webpage](capture-a-full-height-screenshot-of-a-webpage.md)
+
+## AI Tools
+
+* [Llms.txt](https://gaffa.dev/docs/llms-full.txt)
