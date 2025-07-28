@@ -2,17 +2,6 @@
 description: >-
   We use API Keys for authenticating requests to our API. In this document we'll
   explain how you can manage and use the keys for your account.
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # API Authentication

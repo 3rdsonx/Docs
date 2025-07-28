@@ -4,20 +4,6 @@ description: >-
   building fast, powerful web automations!
 cover: https://gitbookio.github.io/onboarding-template-images/header.png
 coverY: 0
-layout:
-  cover:
-    visible: false
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: false
 ---
 
 # Get Started

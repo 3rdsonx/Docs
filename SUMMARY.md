@@ -8,6 +8,7 @@
 
 * [Browser Requests](features/browser-requests/README.md)
   * [Actions](features/browser-requests/actions/README.md)
+    * [Block DOM Removals](features/browser-requests/actions/block-dom-removals.md)
     * [Capture Cookies](features/browser-requests/actions/capture-cookies.md)
     * [Capture DOM](features/browser-requests/actions/capture-dom.md)
     * [Capture Screenshot](features/browser-requests/actions/capture-screenshot.md)
@@ -17,8 +18,8 @@
     * [Download File](features/browser-requests/actions/download-file.md)
     * [Generate Markdown](features/browser-requests/actions/generate-markdown.md)
     * [Generate Simplified DOM](features/browser-requests/actions/generate-simplified-dom.md)
-    * [JSON Parsing](features/browser-requests/actions/json-parsing.md)
     * [Print](features/browser-requests/actions/print.md)
+    * [Parse JSON](features/browser-requests/actions/parse-json.md)
     * [Parse Table](features/browser-requests/actions/parse-table.md)
     * [Scroll](features/browser-requests/actions/scroll.md)
     * [Type](features/browser-requests/actions/type.md)
