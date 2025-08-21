@@ -41,7 +41,7 @@ The following code will scroll half way down the page.
 ```json
 "actions": [
       {
-        "name": "scroll",
+        "type": "scroll",
         "percentage": 50,
       }
 ]
@@ -54,7 +54,7 @@ The following code will scroll to the bottom of the page and then keep scrolling
 ```json
 "actions": [
       {
-        "name": "scroll",
+        "type": "scroll",
         "percentage": 100,
         "scroll_speed": "slow",
         "max_scroll_time": 25000,
