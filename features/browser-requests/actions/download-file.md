@@ -12,7 +12,7 @@ See [universal parameters](./#universal-parameters).
 
 ### Files Supported
 
-Currently this only works with PDF files.
+Currently this only works with the following file formats: **.pdf, .jpg, .png, .gif, .bmp, .webp, .svg, .tiff, .tif, .img**
 
 ### Usage
 

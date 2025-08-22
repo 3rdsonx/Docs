@@ -30,6 +30,7 @@
     * [Infinitely Scroll an Ecommerce Site](features/browser-requests/api-playground-examples/infinitely-scroll-an-ecommerce-site.md)
     * [Capture a Full Height Screenshot](features/browser-requests/api-playground-examples/capture-a-full-height-screenshot.md)
     * [Automated Form Filling](features/browser-requests/api-playground-examples/automated-form-filling.md)
+* [Mapping Requests](features/mapping-requests.md)
 
 ## API Reference
 
@@ -37,11 +38,13 @@
 * [POST v1/browser/requests](api-reference/post-v1-browser-requests.md)
 * [GET v1/browser/requests/{id}](api-reference/get-v1-browser-requests-id.md)
 * [GET v1/browser/requests](api-reference/get-v1-browser-requests.md)
-* [Beta Endpoints](api-reference/beta-endpoints/README.md)
-  * [POST v1/schemas](api-reference/beta-endpoints/post-v1-schemas.md)
-  * [PUT v1/schemas](api-reference/beta-endpoints/put-v1-schemas.md)
-  * [DELETE v1/schemas/{id}](api-reference/beta-endpoints/delete-v1-schemas-id.md)
-  * [GET v1/schemas](api-reference/beta-endpoints/get-v1-schemas.md)
+* [POST v1/schemas](api-reference/post-v1-schemas.md)
+* [PUT v1/schemas](api-reference/put-v1-schemas.md)
+* [GET v1/schemas](api-reference/get-v1-schemas.md)
+* [DELETE v1/schemas/{id}](api-reference/delete-v1-schemas-id.md)
+* [POST v1/site/map](api-reference/post-v1-site-map.md)
+* [GET v1/site/map](api-reference/get-v1-site-map.md)
+* [GET v1/site/map/{id}](api-reference/get-v1-site-map-id.md)
 
 ## Tutorials
 

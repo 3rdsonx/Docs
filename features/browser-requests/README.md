@@ -4,7 +4,7 @@ description: Making web automation requests has never been so simple.
 
 # Browser Requests
 
-Browser Requests are our first main product and allow you to send the Gaffa API a URL and a list of actions you want to be carried out, including any outputs you want from the page. We'll carry out the request on our cloud browsers and return you the response with no need to worry about proxies, IP rotation, web automation frameworks and scaling.&#x20;
+Browser Requests allow you to send the Gaffa API a URL and a list of actions you want to be carried out, including any outputs you want from the page. We'll carry out the request on our cloud browsers and return you the response with no need to worry about proxies, IP rotation, web automation frameworks and scaling.&#x20;
 
 There's absolutely zero configuration needed and you can interact with Gaffa from any program that can send web requests. We think it's by far the simplest way to automate simple web tasks and the good news is, we're just getting started and have much more planned.
 

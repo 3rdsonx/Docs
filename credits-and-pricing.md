@@ -15,3 +15,7 @@ Browser requests are charged in terms of credits based on the following factors:
   * [JSON Parsing](features/browser-requests/actions/parse-json.md)
 
 Each successful request will deduct the corresponding number of credits from your monthly allowance. Be sure to use as many of your monthly credits as you want as they don't roll over month to month.
+
+## Mapping Requests
+
+Mapping requests are also charged in credits at a rate of **1 credit per mapping request.**
