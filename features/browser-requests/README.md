@@ -88,11 +88,13 @@ Whilst we'll do our best to provide access to as wide a range of sites as possib
 
 ## Caching
 
+`max_cache_age`: integer
+
 When we were building Gaffa we noticed that a lot of pre-existing scraping tools don't allow users to easily share their scraped web data with each other, despite many users requesting the same web pages on the same sites. Not only is this a waste of a user's allowance, it also puts a burden on the site owners who are serving the same data to different users for the same purpose. Because of this in Gaffa we have created a service-wide cache.
 
 ### How it works
 
-When making a browser request you can provide a `MaxCacheAge` parameter which is **a number in seconds equal or greater than 0**. This values denotes the maximum age of data you would accept from the API.\
+When making a browser request you can provide a `max_cache_age`parameter which is **a number in seconds equal or greater than 0**. This values denotes the maximum age of data you would accept from the API.\
 \
 If another user of our service has requested the same URL with exactly the same parameters and actions as you in this chosen timeframe then the response will be returned to you immediately and the response will not be carried out on one of our browsers. If there are multiple identical requests in the given timeframe then the most recent will be returned.\
 \
@@ -102,6 +104,8 @@ This will save you time waiting for the response, as well as credits, because re
 
 ## Screen Recording
 
+`record_request`: boolean
+
 By specifying `record_request` you can ask Gaffa to screen record your automation and return a video in the response allowing you to view the magic happening or to debug your automation.
 
 Recording requests comes at an [additional cost](../../credits-and-pricing.md).
@@ -109,6 +113,8 @@ Recording requests comes at an [additional cost](../../credits-and-pricing.md).
 ***
 
 ## Max Media Bandwidth
+
+`max_media_bandwidth`: integer
 
 If you are using Gaffa on a site with lots of images and videos and more interested in the text data on the page, you can cap how much data a page loads in MB using the `max_media_bandwidth` setting. This makes your automation faster and prevents spending credits on data you aren't interested in.\
 \
@@ -119,6 +125,8 @@ With the `max_media_bandwidth` value set, Gaffa monitors data being downloaded b
 ***
 
 ## Time Limit
+
+`time_limit`: integer
 
 Using the setting `time_limit` caps the maximum running time of the request in milliseconds. If this time expires all incomplete actions will be cancelled and the request will return an error. This cap has to be less than the maximum request running time dictated by your plan and if not set, will default to this value.
 
