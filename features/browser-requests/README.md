@@ -114,11 +114,7 @@ If you are using Gaffa on a site with lots of images and videos and more interes
 \
 With the `max_media_bandwidth` value set, Gaffa monitors data being downloaded by the page and when downloaded data exceeds the given number of MB, all further downloads of images or video will be cancelled. \
 \
-`max_media_bandwidth` defaults to `null` meaning downloads are not capped.
-
-{% hint style="info" %}
-Setting a value of 0 will cause no images to load which can work on some sites but on others this could lead to the site thinking you are using an ad blocker.
-{% endhint %}
+&#xNAN;**`max_media_bandwidth` defaults to `null` meaning downloads are not capped. Setting a value of 0 will cause no images to load which can work on some sites but on others this could lead to the site thinking you are using an ad blocker.**
 
 ***
 
