@@ -19,7 +19,7 @@ The following code will wait 1 second and then continue with the next action, if
 ```json
 "actions": [
       {
-        "name": "wait",
+        "type": "wait",
         "time": 1000,
       }
 ]
@@ -32,7 +32,7 @@ The following code will wait for a table to appear on the page for a maximum of 
 ```json
 "actions": [
       {
-        "name": "wait",
+        "type": "wait",
         "selector": "table",
         "timeout": 5000,
         "continueOnFail": true
