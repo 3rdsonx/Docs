@@ -64,5 +64,6 @@ The following code will scroll to the bottom of the page and then keep scrolling
 ]
 ```
 
+### Read more
 
-
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>How to Handle Infinite Scrolling and Dynamic Loading with Gaffa’s Scroll Action</td><td><a href="https://gaffa.dev/blog/how-to-handle-infinite-scrolling-and-dynamic-loading-with-gaffas-scroll-action">https://gaffa.dev/blog/how-to-handle-infinite-scrolling-and-dynamic-loading-with-gaffas-scroll-action</a></td><td><a href="../../../.gitbook/assets/scroll_illustration_1920x1080_V4.jpg">scroll_illustration_1920x1080_V4.jpg</a></td></tr></tbody></table>

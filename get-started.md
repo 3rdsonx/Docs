@@ -8,7 +8,7 @@ coverY: 0
 
 # Get Started
 
-Welcome to the Gaffa documentation site! You'll find everything you need here to get started using API including [interactive API definitions](broken-reference), [a comprehensive list of actions](features/browser-requests/actions/) you can use to interact with our cloud browsers and [breakdowns of our example requests](features/browser-requests/api-playground-examples/) you can run right away in our API Playground.
+Welcome to the Gaffa documentation site! You'll find everything you need here to get started using API including [interactive API definitions](/broken/pages/Jer3HvlR3KNzesxDbiIL), [a comprehensive list of actions](features/browser-requests/actions/) you can use to interact with our cloud browsers and [breakdowns of our example requests](features/browser-requests/api-playground-examples/) you can run right away in our API Playground.
 
 {% hint style="info" %}
 Gaffa is currently in it's very early stages, so we'd love to hear how we can improve our docs and API to make life easier for our users. If you have any questions or comments please [email us](https://emailto:support@gaffa.dev) or us [the support tool on our site](https://go.crisp.chat/chat/embed/?website_id=87a5807c-14f5-4ed3-9fbe-3d161610357b).\
@@ -54,7 +54,7 @@ Here are all the sample requests we've created for use in the API Playground.
 {% step %}
 ## Building your own browser requests
 
-Once you have a paid account and are ready to start building your own browser requests you'll want to read about all the other [actions ](features/browser-requests/actions/)you can use for your solution as well as how you can easily use [proxy servers](features/browser-requests/#proxy-servers), [our cache](features/browser-requests/#caching) as well as the [other endpoints that are part of the API](broken-reference).
+Once you have a paid account and are ready to start building your own browser requests you'll want to read about all the other [actions ](features/browser-requests/actions/)you can use for your solution as well as how you can easily use [proxy servers](features/browser-requests/#proxy-servers), [our cache](features/browser-requests/#caching) as well as the [other endpoints that are part of the API](/broken/pages/Jer3HvlR3KNzesxDbiIL).
 {% endstep %}
 {% endstepper %}
 

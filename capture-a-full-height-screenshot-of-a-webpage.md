@@ -156,4 +156,4 @@ Gaffa's screenshot action could be used for a huge number of use cases, but here
 
 #### All this is powered by Gaffa’s hosted headless browsers with no local setup required. Experiment with more actions and build complex browser workflows easily. Refer to the full[ Browser Requests API documentation](https://gaffa-1.gitbook.io/gaffa/features/browser-requests) for additional capabilities.
 
-\
+<br>
