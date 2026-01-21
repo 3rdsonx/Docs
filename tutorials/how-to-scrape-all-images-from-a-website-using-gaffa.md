@@ -172,11 +172,11 @@ Sit back and watch as Gaffa automatically discovers, renders, and scrapes every 
 
 ### Why This Gaffa-Powered Approach is Superior
 
-* Handles JavaScript-Rendered Content: Unlike simple HTTP scrapers, Gaffa uses a real browser, so it captures anything that is lazy-loaded by JavaScript.
-* Stealth Downloading with Residential Proxies: The download\_file action uses real browsers and proxies, making your requests appear as legitimate user traffic.
-* Intelligent Caching: With \`max\_cache\_age\` set to 24 hours, repeated requests for the same image are served from cache, reducing load on target servers and improving efficiency.
-* Built-in Reliability: Gaffa's infrastructure handles proxy rotation, request pacing, retries automatically and provides the correct file format directly.
-* Respectful Scraping: Gaffa's infrastructure is designed for responsible automation. Always check a website's robots.txt and terms of service before scraping, and respect reasonable rate limits.
+* **Handles JavaScript-Rendered Content:** Unlike simple HTTP scrapers, Gaffa uses a real browser, so it captures anything that is lazy-loaded by JavaScript.
+* **Stealth Downloading with Residential Proxies:** The download\_file action uses real browsers and proxies, making your requests appear as legitimate user traffic.
+* **Intelligent Caching:** With \`max\_cache\_age\` set to 24 hours, repeated requests for the same image are served from cache, reducing load on target servers and improving efficiency.
+* **Built-in Reliability:** Gaffa's infrastructure handles proxy rotation, request pacing, retries automatically and provides the correct file format directly.
+* **Respectful Scraping:** Gaffa's infrastructure is designed for responsible automation. Always check a website's robots.txt and terms of service before scraping, and respect reasonable rate limits.
 
 ### Use Cases and Ideas
 
