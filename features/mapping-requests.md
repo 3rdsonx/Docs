@@ -1,7 +1,5 @@
 # Mapping Requests
 
-{% include "../.gitbook/includes/beta-feature.md" %}
-
 Mapping requests allow you to extract all urls from the sitemap of a website. Gaffa mapping requests have the following useful features:
 
 * **Sitemap Discovery:** No need to find the URL of a site's sitemap, we'll find it automatically.
