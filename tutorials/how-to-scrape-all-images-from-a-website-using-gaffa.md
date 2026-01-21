@@ -189,6 +189,6 @@ This technique is useful for far more than just downloading pictures. Here are a
 
 #### Next Steps
 
-The full script is available on our [GitHub repository](https://github.com/).
+The full script is available on our [GitHub repository](https://github.com/GaffaAI/GaffaPythonExamples/tree/main/scripts/ScrapeAllImages).
 
 Ready to automate your image collection with enterprise-grade infrastructure? [Sign up for Gaffa](https://gaffa.dev/sign-up) and start building today.
