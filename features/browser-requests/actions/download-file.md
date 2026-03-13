@@ -2,7 +2,7 @@
 
 **Type**: `download_file`
 
-Request a copy of the most recent file viewed in the browser.
+Request a copy of the most recently viewed file in the browser.
 
 ### Parameters
 
@@ -12,7 +12,7 @@ See [universal parameters](./#universal-parameters).
 
 ### Files Supported
 
-Currently this only works with the following file formats: **.pdf, .jpg, .png, .gif, .bmp, .webp, .svg, .tiff, .tif, .img**
+Currently, this only works with the following file formats: **.pdf, .jpg, .png, .gif, .bmp, .webp, .svg, .tiff, .tif, .img**
 
 ### Usage
 

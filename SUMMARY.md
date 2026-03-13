@@ -7,6 +7,8 @@
 ## Features
 
 * [Browser Requests](features/browser-requests/README.md)
+  * [Parameters](features/browser-requests/parameters.md)
+  * [Settings](features/browser-requests/settings.md)
   * [Actions](features/browser-requests/actions/README.md)
     * [Block DOM Removals](features/browser-requests/actions/block-dom-removals.md)
     * [Capture Cookies](features/browser-requests/actions/capture-cookies.md)
@@ -28,7 +30,7 @@
     * [Export Web Page to PDF](features/browser-requests/api-playground-examples/export-web-page-to-pdf.md)
     * [Convert Web Page to Markdown](features/browser-requests/api-playground-examples/convert-web-page-to-markdown.md)
     * [Infinitely Scroll an Ecommerce Site](features/browser-requests/api-playground-examples/infinitely-scroll-an-ecommerce-site.md)
-    * [Capture a Full Height Screenshot](features/browser-requests/api-playground-examples/capture-a-full-height-screenshot.md)
+    * [Capture a Full-Height Screenshot](features/browser-requests/api-playground-examples/capture-a-full-height-screenshot.md)
     * [Automated Form Filling](features/browser-requests/api-playground-examples/automated-form-filling.md)
 * [Mapping Requests](features/mapping-requests.md)
 

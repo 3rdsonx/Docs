@@ -2,14 +2,14 @@
 
 **Type:** `capture_snapshot`
 
-This output type will return a HTML file which captures a static version of the page state. The page will load offline and can be saved to your local machine.
+This output type will return an HTML file that captures a static version of the page state. The page will load offline and can be saved to your local machine.
 
 This will:
 
 * Load and embed all images on the page.
-* Embed all css files
+* Embed all CSS files
 
-Currently, Javascript will be disabled and interactivity might not worked as expected but this feature should be useful for preserving the page state as it was and allowing you to view it offline.
+Currently, JavaScript will be disabled, and interactivity might not work as expected, but this feature should be useful for preserving the page state as it was and allowing you to view it offline.
 
 ### Parameters
 

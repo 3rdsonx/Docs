@@ -12,11 +12,11 @@ See [universal parameters](./#universal-parameters).
 
 ### Scroll Speed & Interval
 
-Gaffa gives you a flexibility about how fast you scroll down the page which can be really useful to get around restrictions enforced by some sites which detect and limit fast scrolling. By experimenting with `scroll_speed` and `interval` you will be able to create the perfect scrolling action for your scenario. The speed settings are as follows:
+Gaffa gives you flexibility over how fast you scroll down the page, which can be really useful to get around restrictions enforced by some sites that detect and limit fast scrolling. By experimenting with `scroll_speed` and `interval`, you will be able to create the perfect scrolling action for your scenario. The speed settings are as follows:
 
-* `instant`- the page will smoothly scroll to the desired position immediately, useful for sites with no rate limits or loading events caused by scroll actions.
-* `medium` - human-like scrolling at a normal speed to the desired position. Gaffa will scroll in much the same way as you would using a mouse.
-* `slow`- human-like scrolling at a very slow speed to the desired position. The speed is comparable to scrolling whilst reading a page.
+* `instant`- The page will smoothly scroll to the desired position immediately, useful for sites with no rate limits or loading events caused by scroll actions.
+* `medium` - Human-like scrolling at a normal speed to the desired position. Gaffa will scroll in much the same way as you would using a mouse.
+* `slow`- Human-like scrolling at a very slow speed to the desired position. The speed is comparable to scrolling while reading a page.
 
 `interval`allows you to adjust the scroll speed further by inserting pauses between scroll events.
 
@@ -26,17 +26,17 @@ We've found some sites with infinite scrolling and strict rate limits respond be
 
 ### Wait Time
 
-If `wait_time` is set to 0 and Gaffa arrives at the desired location then Gaffa will immediately mark the action as succeeded. However, if another value is set then the page will be monitored for the desired amount of time to check for further expansions. If, during this period, the page expands again then Gaffa will continue scrolling to the desired location and the wait will reset.
+If `wait_time` is set to 0, and Gaffa arrives at the desired location, then Gaffa will immediately mark the action as succeeded. However, if another value is set, the page will be monitored for the specified duration to check for further expansions. If, during this period, the page expands again, then Gaffa will continue scrolling to the desired location, and the wait will reset.
 
 {% hint style="info" %}
-This can be really useful if you find that the site takes some time to load more items when you reach the bottom of the page and more will be loaded after the action has suceeded.
+This can be really useful if you find that the site takes some time to load additional items when you reach the bottom of the page, and more items load after the action has succeeded.
 {% endhint %}
 
 ### Usage
 
 #### Scroll a particular percentage down the page
 
-The following code will scroll half way down the page.
+The following code will scroll halfway down the page.
 
 ```json
 "actions": [

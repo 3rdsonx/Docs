@@ -2,7 +2,7 @@
 
 **Type**: `click`
 
-Request that the browser clicks a particular element on the page.
+Request that the browser click a particular element on the page.
 
 ### Parameters
 
@@ -27,7 +27,7 @@ The following code will wait 1 second and then continue with the next action, if
 
 #### Wait for a particular element to appear
 
-The following code will wait for the logo to appear for a maximum of 5 seconds and it will continue with the list of actions
+The following code will wait for the logo to appear for a maximum of 5 seconds, and it will continue with the list of actions
 
 ```json
 "actions": [

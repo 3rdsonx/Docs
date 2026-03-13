@@ -2,7 +2,7 @@
 
 **Type**: `type`
 
-Request that the browser type a particular bit of text into a field.
+Request that the browser enter a specific piece of text into a field.
 
 ### Parameters
 
@@ -11,7 +11,7 @@ Request that the browser type a particular bit of text into a field.
 See [universal parameters](./#universal-parameters).
 
 {% hint style="info" %}
-Sites that use more advanced bot detection often use keyboard events to detect unusual activity on their site, rather than immediately dropping all characters of the text into a field our platform types the text in a human-like manner.
+Sites that use more advanced bot detection often use keyboard events to detect unusual activity on their site, rather than immediately dropping all characters of the text into a field, our platform types the text in a human-like manner.
 {% endhint %}
 
 ### Usage
@@ -32,7 +32,7 @@ The following action will type into a particular text field.
 
 #### Wait for an element to appear before typing
 
-The following code will wait a maximum of 10 seconds for the email input to appear in the field and then type in the provided email.
+The following code will wait up to 10 seconds for the email input field to appear, then type in the provided email.
 
 ```json
 "actions": [

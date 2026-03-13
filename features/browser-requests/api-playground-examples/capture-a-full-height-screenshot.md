@@ -4,15 +4,15 @@ description: >-
   a page and then capture a full height screenshot.
 ---
 
-# Capture a Full Height Screenshot
+# Capture a Full-Height Screenshot
 
-_The following example is a request we've pre-built to show you Gaffa's capabilities against our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=screenshot_ecommerce)_**.**_
+_The following example is a request we've prebuilt to show you Gaffa's capabilities on our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=screenshot_ecommerce)_**.**_
 
-Gaffa can also capture screenshots at any point during your interaction for use in your app or just to work out exactly was being shown at a given point in time. You can capture just what is shown as if you were looking at the screen or the full height of the page.
+Gaffa can also capture screenshots at any point during your interaction, for use in your app or to determine exactly what was shown at a given point in time. You can capture just what is shown, as if you were looking at the screen or the full height of the page.
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the ecommerce page with 20 items, wait for and dismiss the dialog, scroll to the bottom of the page and capture a full height screenshot.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the ecommerce page with 20 items, wait for and dismiss the dialogue, scroll to the bottom of the page and capture a full-height screenshot.
 
 ```json
 {
@@ -70,6 +70,6 @@ The request below uses the [POST endpoint](../../../api-reference/post-v1-browse
 
 ## Response
 
-The export full height screenshot of the page showing all items.
+The full-height export screenshot of the page showing all items.
 
 <figure><img src="../../../.gitbook/assets/GaffaFullHeightScreenshotExample (1).png" alt=""><figcaption><p>Gaffa's full height screenshot</p></figcaption></figure>

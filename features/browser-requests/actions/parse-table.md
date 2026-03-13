@@ -6,7 +6,7 @@
 
 Finds a table on the page with a given selector and then converts the table data into a JSON object.&#x20;
 
-This action first fins the table headers and converts them into property names by converting them to lower case and replacing non-alphanumeric characters with underscores. It then processes each table row and for each cell is extracts the contents and saves a value. At the moment, all values will be `string` types.
+This action first finds the table headers and converts them into property names by converting them to lower case and replacing non-alphanumeric characters with underscores. It then processes each table row and, for each cell, extracts the contents and saves a value. At the moment, all values will be `string` types.
 
 ### Parameters
 

@@ -1,4 +1,4 @@
-# Capture a Full-Height Screenshot of a Webpage
+# Capture a full-height screenshot of a webpage
 
 In just a few lines of JSON inlined in a single cURL command, you can automate:
 
@@ -14,7 +14,7 @@ All without installing Playwright or managing headless browsers, Gaffa handles i
 * A valid Gaffa API key
 * A simple HTTP client (cURL, Postman, axios, etc.).
 * Familiarity with the[ API Playground](https://gaffa.dev/dashboard/playground) for testing browser requests.
-* Target URL for this tutorial, for this we'll use wikipedia: [https://en.wikipedia.org/wiki/Artificial\_intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence)
+* Target URL for this tutorial, for this we'll use Wikipedia: [https://en.wikipedia.org/wiki/Artificial\_intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence)
 
 {% stepper %}
 {% step %}
@@ -62,9 +62,9 @@ curl https://api.gaffa.dev/v1/browser/requests \
   }'
 ```
 
-Replace YOUR\_API\_KEY with your actual token from your [Dashboard.](https://gaffa.dev/dashboard/api-keys)  This command has the following actions:
+Replace YOUR\_API\_KEY with your actual token from your [Dashboard.](https://gaffa.dev/dashboard/api-keys) This command has the following actions:
 
-1. **Wait** (optional): Detect and accept Wikipedia’s cookie banner if it appears. If it fails, that simply means no banner was present or it did not load in time. Since continue\_on\_fail defaults to true, Gaffa will move on without halting the workflow, ensuring the rest of the steps still execute.
+1. **Wait** (optional): Detect and accept Wikipedia’s cookie banner if it appears. If it fails, that simply means no banner was present, or it did not load in time. Since continue\_on\_fail defaults to true, Gaffa will continue without halting the workflow, ensuring the remaining steps still execute.
 2. **Wait**: Ensure the main heading (#firstHeading) is loaded.
 3. **Scroll**: Scroll through the entire page to trigger any lazy-loaded content.&#x20;
 4. **Capture** Screenshot: Produce a full-page PNG.
@@ -140,11 +140,11 @@ The response contains the following information:
 * **data.running\_time** and **data.page\_load\_time**: Performance metrics.
 * **data.actions**: Each action’s details, including successes, timeouts, and final screenshot URL.
 
-Within the list of actions you'll be able to see the capture\_screenshot action which contains an **output** parameter containing the full size screenshot that was captured.
+Within the list of actions, you'll be able to see the capture\_screenshot action, which contains an output parameter containing the full-size screenshot that was captured.
 {% endstep %}
 {% endstepper %}
 
-If you don't want to use cURL, you can also run this query in the [Gaffa API Playground](https://gaffa.dev/dashboard/playground) which is an easy way to get started.
+If you don't want to use cURL, you can also run this query in the [Gaffa API Playground](https://gaffa.dev/dashboard/playground), which is an easy way to get started.
 
 ### Use Cases
 
@@ -154,6 +154,6 @@ Gaffa's screenshot action could be used for a huge number of use cases, but here
 * **Archival**: Schedule daily captures for audit or compliance purposes.
 * **Monitoring**: Automate periodic checks to detect visual bugs or layout shifts.
 
-#### All this is powered by Gaffa’s hosted headless browsers with no local setup required. Experiment with more actions and build complex browser workflows easily. Refer to the full[ Browser Requests API documentation](https://gaffa-1.gitbook.io/gaffa/features/browser-requests) for additional capabilities.
+#### All this is powered by Gaffa’s hosted headless browsers with no local setup required. Experiment with more actions and easily build complex browser workflows. Refer to the full[ Browser Requests API documentation](https://gaffa-1.gitbook.io/gaffa/features/browser-requests) for additional capabilities.
 
 <br>

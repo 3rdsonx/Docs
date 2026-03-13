@@ -7,13 +7,13 @@ description: >-
 
 # Export Web Page to PDF
 
-_**The following example is a request we've pre-built to show you Gaffa's capabilities against our**_ [_**demo site.**_](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=html_to_pdf)_**.**_
+_**The following example is a request we've prebuilt to show you Gaffa's capabilities on our**_ [_**demo site.**_](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=html_to_pdf)_**.**_
 
-Gaffa's print to PDF feature allows you to export web pages as PDF files easily. Unlike the standard "Print to PDF" in your local browser, Gaffa's feature waits for specific items to load, uses proxies, and scales with your product's growth. Enhance your customer experience and streamline your PDF export process
+Gaffa's print-to-PDF feature lets you easily export web pages to PDF. Unlike the standard "Print to PDF" in your local browser, Gaffa's feature waits for specific items to load, uses proxies, and scales with your product's growth. Enhance your customer experience and streamline your PDF export process
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the table page, wait for the table to load and then print the webpage to a PDF in size A4 with a margin of 20 and using the portrait orientation.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the table page, wait for the table to load, and then print the webpage to an A4 PDF with a 20 mm margin and in portrait orientation.
 
 ```json
 {
@@ -53,6 +53,6 @@ Read the full documentation for these actions here.
 
 ## Response
 
-Here's an example of the PDF returned by the request after waiting for the table to load.
+Here's an example of the PDF returned by the request after the table has loaded.
 
 {% file src="../../../.gitbook/assets/GaffaPrintPdfExample (1).pdf" %}

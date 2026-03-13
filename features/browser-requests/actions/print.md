@@ -2,7 +2,7 @@
 
 **Type**: `print`
 
-Request that the browser prints the page to a PDF.
+Request that the browser print the page to a PDF.
 
 ### Parameters
 
@@ -14,7 +14,7 @@ See [universal parameters](./#universal-parameters).
 
 #### Print a page in landscape to PDF
 
-The following JSON prints the page to a PDF in landscape with margins of 20px.
+The following JSON prints the page to a PDF in landscape orientation with a 20px margin.
 
 ```json
 "actions": [

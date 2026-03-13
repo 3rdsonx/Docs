@@ -6,13 +6,13 @@ description: >-
 
 # Automated Form Filling
 
-_The following example is a request we've pre-built to show you Gaffa's capabilities against our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=form_fill)_**.**_
+_The following example is a request we've prebuilt to show you Gaffa's capabilities on our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=form_fill)_**.**_
 
-Filling forms is tedious, Gaffa can be used to fill out a form in a human-like manner so you can spend time doing much more interesting things.
+Filling forms is tedious; Gaffa can be used to fill out a form in a human-like manner, so you can spend time doing much more interesting things.
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the form simulator page with some sections pre-filled (for speed). After typing in the required information and clicking submit, Gaffa waits for the success dialog to show before returning a video of the interaction.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the form simulator page with some sections pre-filled (for speed). After typing in the required information and clicking submit, Gaffa waits for the success dialogue to appear before returning a video of the interaction.
 
 ```json
 {

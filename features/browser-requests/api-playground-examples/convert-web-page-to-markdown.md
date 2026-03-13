@@ -7,13 +7,13 @@ description: >-
 
 # Convert Web Page to Markdown
 
-_The following example is a request we've pre-built to show you Gaffa's capabilities against our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=article_to_markdown)_**.**_
+_The following example is a request we've prebuilt to demonstrate Gaffa's capabilities on our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=article_to_markdown)_**.**_
 
-Gaffa converts web pages to clean markdown, stripping away styling, scripts, and images. This optimizes content for LLM applications by reducing token usage while preserving essential information.
+Gaffa converts web pages to clean markdown, stripping away styling, scripts, and images. This optimises content for LLM applications by reducing credit usage while preserving essential information.
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the article simulator, wait for the article to load and then generate a markdown from the page's content which you can download for use in your program.
+The request below uses the POST endpoint to open the demo site in the article simulator, wait for the article to load, and then generate a Markdown file from the page's content, which you can download for use in your program.
 
 ```json
 {
@@ -48,6 +48,6 @@ The request below uses the [POST endpoint](../../../api-reference/post-v1-browse
 
 ## Response
 
-Here's an example of the PDF returned by the request after waiting for the article to load.
+Here's an example of the PDF returned by the request after the article has loaded.
 
 {% file src="../../../.gitbook/assets/GaffaMarkdownExample (2).md" %}

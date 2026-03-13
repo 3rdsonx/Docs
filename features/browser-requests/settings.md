@@ -1,0 +1,175 @@
+# Settings
+
+The `settings` object in your browser request allows you to configure various aspects of how your automation behaves. Below are all the available settings parameters you can use.
+
+***
+
+## Screen Recording
+
+**Parameter:** `record_request` (boolean)
+
+By specifying `record_request`, you can ask Gaffa to screen record your automation and return a video in the response, allowing you to view the magic happening or to debug your automation.
+
+Recording requests comes at an [additional cost](../../credits-and-pricing.md).
+
+**Example:**
+
+```json
+{
+  "url": "https://example.com",
+  "settings": {
+    "record_request": true,
+    "actions": [...]
+  }
+}
+```
+
+***
+
+## Max Media Bandwidth
+
+**Parameter:** `max_media_bandwidth` (integer or null)
+
+If you're using Gaffa on a site with lots of images and videos but are more interested in the text data on the page, you can cap how much media content a page loads using the `max_media_bandwidth` setting. This makes your automation faster and prevents spending credits on data you aren't interested in.
+
+### Setting Options
+
+You can set `max_media_bandwidth` in three ways:
+
+* `"max_media_bandwidth": 0` — Block all images and videos completely
+* `"max_media_bandwidth": 5` — Cap media downloads at 5MB (or any number you specify)
+* `"max_media_bandwidth": null` — No limit (default)
+
+### How It Works
+
+When the `max_media_bandwidth` value is set, Gaffa monitors the data being downloaded by the page. When the downloaded media exceeds the specified MB limit, any further downloads of images or videos will be cancelled.
+
+{% hint style="info" %}
+**Important:** When enabled, only image and video downloads are blocked. HTML, CSS, JavaScript, and other essential page resources load normally, preserving functionality.
+{% endhint %}
+
+### Common Use Cases
+
+This setting is particularly useful for:
+
+* **Scraping news articles for text only** — Extract headlines and article content without downloading thumbnails
+* **E-commerce price monitoring** — Track product prices and descriptions without loading product images
+* **Extracting reviews and text content** — Capture customer reviews without profile pictures
+* **SEO and content analysis** — Analyze page structure, headings, and text without media files
+
+{% hint style="success" %}
+**Performance Benefits:** Testing on image-heavy news sites showed up to **43% token savings** with no loss of text data. Sites with more media content see even greater savings in both cost and request speed.&#x20;
+{% endhint %}
+
+{% hint style="warning" %}
+**When NOT to Use: Not recommended for capturing screenshots, verifying images, or analysing visual content.**
+{% endhint %}
+
+### Getting Started
+
+Start with `max_media_bandwidth: 0` for maximum savings, then adjust upward only if you encounter issues with specific sites. Setting a value of `0` will cause no images to load, which works well on most sites, but on some could lead to the site thinking you are using an ad blocker.
+
+**Example:**
+
+```json
+{
+  "url": "https://www.bbc.com/",
+  "settings": {
+    "max_media_bandwidth": 0,
+    "actions": [
+      {
+        "type": "generate_markdown"
+      }
+    ]
+  }
+}
+```
+
+**Learn more:** See our detailed guide on optimising browser requests with max\_media\_bandwidth, including real-world testing, use cases, and best practices.
+
+***
+
+## Time Limit
+
+**Parameter:** `time_limit` (integer)
+
+Using the `time_limit` setting caps the maximum running time of the request in milliseconds. If this time expires, all incomplete actions will be cancelled, and the request will return an error.
+
+This cap must be less than the maximum request running time specified in your plan; if not set, it defaults to this value.
+
+**Example:**
+
+```json
+{
+  "url": "https://example.com",
+  "settings": {
+    "time_limit": 30000,
+    "actions": [...]
+  }
+}
+```
+
+***
+
+## Actions
+
+**Parameter:** `actions` (array)
+
+The `actions` parameter defines the specific tasks you want Gaffa to perform on the page once it loads. Actions are executed in the order they appear in your array and can include tasks such as waiting for elements, capturing screenshots, generating Markdown, printing to PDF, and more.
+
+We currently support ten different types of actions, each designed for specific automation needs. [Learn more about all available actions here](actions/).
+
+**Example:**
+
+```json
+{
+  "url": "https://example.com",
+  "settings": {
+    "actions": [
+      {
+        "type": "wait",
+        "selector": "table"
+      },
+      {
+        "type": "print",
+        "size": "A4",
+        "margin": 20,
+        "orientation": "portrait"
+      }
+    ]
+  }
+}
+```
+
+***
+
+## Complete Example
+
+Here's a browser request using multiple settings parameters:
+
+```json
+{
+  "url": "https://www.bbc.com/",
+  "proxy_location": "us",
+  "async": false,
+  "max_cache_age": 0,
+  "settings": {
+    "record_request": false,
+    "max_media_bandwidth": 0,
+    "time_limit": 60000,
+    "actions": [
+      {
+        "type": "wait",
+        "selector": "table"
+      },
+      {
+        "type": "print",
+        "size": "A4",
+        "margin": 20,
+        "orientation": "portrait"
+      }
+    ]
+  }
+}
+```
+

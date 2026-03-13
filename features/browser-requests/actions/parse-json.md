@@ -1,7 +1,7 @@
 # Parse JSON
 
 {% hint style="info" %}
-**Paid Action:** This action will consume credits based on the amount of content being parsed, see more [below](parse-json.md#pricing).
+**Paid Action:** This action consumes credits based on the amount of content parsed. See more [below](parse-json.md#pricing).
 {% endhint %}
 
 {% include "../../../.gitbook/includes/beta-feature.md" %}
@@ -10,7 +10,7 @@
 
 The `parse_json` action extracts data from web pages and online PDFs. It uses AI to parse web content from text into a pre-defined data schema and return it as a JSON object.
 
-The action allows you to convert unstructured content such as academic papers, forms, and webpages into JSON objects, which you can use in automations, analysis, or further processing.
+The action lets you convert unstructured content, such as academic papers, forms, and webpages, into JSON objects that you can use in automations, analysis, or further processing.
 
 _This feature currently works for online PDFs and web page text._&#x20;
 
@@ -91,7 +91,7 @@ This example shows:
 
 ### Schema Operations
 
-Instead of defining schemas inline every time, they can be saved to your Gaffa account and be reused across multiple requests. This makes your actions more readable, easier to maintain, and ensures consistency when parsing similar content.
+Instead of defining schemas inline each time, you can save them to your Gaffa account and reuse them across multiple requests. This makes your actions more readable, easier to maintain, and ensures consistency when parsing similar content.
 
 #### Creating a Saved Schema
 
@@ -298,7 +298,7 @@ Simple List Extraction
 
 ### Pricing
 
-The credits this action uses depends on the model used. Here are the current supported models and their pricing:
+The credits this action uses depend on the model used. Here are the current supported models and their pricing:
 
 | Model         | Input Token Cost                 | Output Token Cost                  |
 | ------------- | -------------------------------- | ---------------------------------- |

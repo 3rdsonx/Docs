@@ -2,7 +2,7 @@
 
 **Type:** `capture_screenshot`
 
-Takes a screenshot of the current page. You can choose to take a full screen screenshot showing the whole page or just the current view.
+Takes a screenshot of the current page. You can take a full-screen screenshot of the entire page or just the current view.
 
 ### Parameters
 

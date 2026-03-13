@@ -1,13 +1,13 @@
 # Actions
 
-When [making a Browser Request](../../../api-reference/post-v1-browser-requests.md) you can specify a list of actions you wish for us to carry out on the requested web page. These actions conform to the following format:
+When [making a Browser Request](../../../api-reference/post-v1-browser-requests.md), you can specify a list of actions you want us to perform on the requested web page. These actions conform to the following format:
 
 {% code overflow="wrap" fullWidth="false" %}
 ```json
 {
     "type": "", //the type of the action
     //other params follow as key value pairs
-    "key": value //string, number etc. 
+    "key": value //string, number, etc. 
 }
 ```
 {% endcode %}
@@ -20,7 +20,7 @@ All actions have the following parameters:
 
 #### Action Execution
 
-Actions are carried out in the order they are submitted. Every action type has a `continue_on_fail` parameter which defaults to `false`, this means that if any action fails the execution of the browser request ends and an error will be returned. Setting `continue_on_fail`  to `true` ensures that all actions are carried out, regardless of previous action results and an error will not be returned.
+Actions are carried out in the order they are submitted. Every action type has a `continue_on_fail` parameter, which defaults to `false`.This means that if any action fails, the execution of the browser request ends, and an error will be returned. Setting `continue_on_fail`  to `true` ensures that all actions are carried out, regardless of the previous action's results, and an error will not be returned.
 
 #### Custom Id
 
@@ -37,15 +37,15 @@ When a browser request has completed, information on an action's execution
     "type": "capture_screenshot", //the type of the action
     "query": "", //a representation of the action in querystring format
     "timestamp": "", //the UTC timestamp the action was executed
-    "output": "" //if the action has an output you will find a url for this here,
-    "error": "" //if the requesst fails the error message will be returned here
+    "output": "" //if the action has an output, you will find a URL for this here,
+    "error": "" //if the request fails, the error message will be returned here
 }
 ```
 {% endcode %}
 
 ## Supported Actions
 
-The Gaffa API supports the following actions detailed below. Click the "read more" buttons to read more information about each type.
+The Gaffa API supports the following actions, detailed below. Click the "read more" buttons to read more information about each type.
 
 ### Actions without outputs
 

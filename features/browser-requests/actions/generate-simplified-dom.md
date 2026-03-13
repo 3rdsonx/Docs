@@ -2,7 +2,7 @@
 
 **Type:** `generate_simplified_dom`
 
-When you're looking at the DOM of a web page, there's a lot of unnecessary data that can be discarded if you are only interested in the page's elements or looking to export the data into a LLM. \
+When you're looking at the DOM of a web page, there's a lot of unnecessary data that can be discarded if you are only interested in the page's elements or looking to export the data into an LLM. \
 \
 The `generate_simplified_dom` output format processes the HTML in the following way:
 
@@ -24,7 +24,7 @@ See [universal parameters](./#universal-parameters).
 
 ### Usage
 
-The following JSON captures the DOM of the page and simplifies it.
+The following JSON captures the page's DOM and simplifies it.
 
 ```json
 "actions": [

@@ -2,7 +2,7 @@
 
 **Type**: `wait`
 
-Request that the browser waits a given amount of time or for a particular item to appear on the page.
+Request that the browser wait a given amount of time or for a particular item to appear on the page.
 
 ### Parameters
 
@@ -27,7 +27,7 @@ The following code will wait 1 second and then continue with the next action, if
 
 #### Wait for a particular element to appear
 
-The following code will wait for a table to appear on the page for a maximum of 5 seconds. If the table has not appeared after 5 seconds the next action will be executed, if provided.
+The following code will wait for a table to appear on the page for a maximum of 5 seconds. If the table has not appeared after 5 seconds, the next action will be executed, if provided.
 
 ```json
 "actions": [

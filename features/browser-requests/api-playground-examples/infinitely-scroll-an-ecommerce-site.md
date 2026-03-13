@@ -6,13 +6,13 @@ description: >-
 
 # Infinitely Scroll an Ecommerce Site
 
-_The following example is a request we've pre-built to show you Gaffa's capabilities against our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=infinite_scroll)_**.**_
+_The following example is a request we've prebuilt to show you Gaffa's capabilities on our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=infinite_scroll)_**.**_
 
-Gaffa automates infinite scrolling on dynamic pages like e-commerce storefronts. Set a duration, and Gaffa will capture all content as it scrolls. Each session can be recorded as a video for playback, letting you debug or review the interaction.
+Gaffa automates infinite scrolling on dynamic pages, such as e-commerce storefronts. Set a duration, and Gaffa will capture all content as it scrolls. Each session can be recorded as a video for playback, letting you debug or review the interaction.
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the ecommerce site simulator with an infinitely scrolling storefront. It will wait for and dismiss a dialog box, wait for a product to load and then scroll down the page for a maximum of 20 seconds - if new items load it will keep scrolling.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site in the e-commerce site simulator, which features an infinitely scrolling storefront. It will wait for and dismiss a dialogue box, wait for a product to load and then scroll down the page for a maximum of 20 seconds - if new items load, it will keep scrolling.
 
 ```json
 {

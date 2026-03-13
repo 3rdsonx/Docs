@@ -19,7 +19,7 @@ By the end of this guide, you'll be able to:
 
 ### Prerequisites
 
-* **Python 3.10+** installed on your machine.
+* **Python 3.10+** is installed on your machine.
 * A **Gaffa API key.** [Sign up for a free account](https://gaffa.dev/sign-up) and get your API key from the dashboard.
 * Basic familiarity with the command line.
 
@@ -49,11 +49,11 @@ export GAFFA_API_KEY='your_gaffa_api_key_here'
 {% step %}
 ### The Core Script Explained
 
-Let's build the script step-by-step. The core logic involves three main parts: mapping the site, capturing the DOM of each page, and extracting the images using Gaffa's download system.
+Let's build the script step-by-step. The core logic consists of three main parts: mapping the site, capturing the DOM for each page, and extracting images using Gaffa's download system.
 
 **Fetch All URLs from the Sitemap**
 
-The `site/map` endpoint is our starting point. It does the heavy lifting of discovery by reading the sitemap, traversing possible link-outs and retrieving every page available on the website you want to scrape.
+The `site/map` endpoint is our starting point. It does the heavy lifting of discovery by reading the sitemap, traversing potential link-outs, and retrieving every page on the website you want to scrape.
 
 ```
 def get_sitemap_urls(site_url, max_cache_age=86400):
@@ -69,7 +69,7 @@ def get_sitemap_urls(site_url, max_cache_age=86400):
 
 **Capture the Rendered DOM of a Page**
 
-For each URL, we use Gaffa to fully render the page (executing JavaScript) and capture the final DOM. This is an important step since many websites are actually not fully rendered when we receive them. They contain links to JavaScript files that need to be executed first. These scripts will load further content from the backend, load images and other data. It’s necessary to first generate a fully rendered page before actually diving deeper into the scraping of it, otherwise we would only scrape the content that was already provided with the initial HTML.
+For each URL, we use Gaffa to fully render the page (including JavaScript execution) and capture the final DOM. This is an important step since many websites are actually not fully rendered when we receive them. They contain links to JavaScript files that need to be executed first. These scripts will load further content from the backend, load images and other data. It’s necessary to first generate a fully rendered page before diving deeper into scraping it; otherwise, we would only scrape the content already provided in the initial HTML.
 
 ```
 def get_dom(url):
@@ -95,7 +95,7 @@ def get_dom(url):
 
 **Extract Images and Download with Gaffa**
 
-With the real HTML in hand, we extract image URLs using a simple regex pattern and use Gaffa's [`download_file`](../features/browser-requests/actions/download-file.md) action for secure, reliable downloads. This also allows us to use caching, which avoids downloading the same image over and over again and putting load onto the target server.
+With the real HTML in hand, we extract image URLs using a simple regex pattern and use Gaffa's [`download_file`](../features/browser-requests/actions/download-file.md) action for secure, reliable downloads. This also allows us to use caching, which avoids downloading the same image over and over again and putting a load on the target server.
 
 ```
 def extract_image_urls(dom_content, base_url):
@@ -182,8 +182,8 @@ Sit back and watch as Gaffa automatically discovers, renders, and scrapes every 
 
 This technique is useful for far more than just downloading pictures. Here are a few ideas:
 
-* **Competitive Analysis**: Analyze the product photography styles of competitors using real browsers.
-* **AI/ML Datasets**: Build large, curated image datasets for training computer vision models with ethically-sourced images.
+* **Competitive Analysis**: Analyze competitors' product photography styles using real browsers.
+* **AI/ML Datasets**: Build large, curated image datasets for training computer vision models using ethically sourced images.
 * **Website Migration & Audits**: Download all assets from an old site before a migration while minimizing server impact through caching.
 * **Archival & Documentation**: Preserve visual evidence for journalism or create backups of a site's visual content using proxies for access.
 
