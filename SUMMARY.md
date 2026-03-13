@@ -51,8 +51,12 @@
 ## Tutorials
 
 * [Convert any webpage into LLM-ready Markdown using Gaffa](tutorials/convert-any-webpage-into-llm-ready-markdown-using-gaffa.md)
-* [Capture a full-height screenshot of a webpage](tutorials/capture-a-full-height-screenshot-of-a-webpage.md)
+* [Capture a full-height screenshot of a webpage](capture-a-full-height-screenshot-of-a-webpage.md)
 * [How to scrape all images from a website using Gaffa](tutorials/how-to-scrape-all-images-from-a-website-using-gaffa.md)
+
+***
+
+* [Extract and Fill Web Forms Automatically Using Gaffa](extract-and-fill-web-forms-automatically-using-gaffa.md)
 
 ## AI Tools
 
