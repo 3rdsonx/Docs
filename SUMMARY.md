@@ -29,9 +29,11 @@
   * [API Playground Examples](features/browser-requests/api-playground-examples/README.md)
     * [Export Web Page to PDF](features/browser-requests/api-playground-examples/export-web-page-to-pdf.md)
     * [Convert Web Page to Markdown](features/browser-requests/api-playground-examples/convert-web-page-to-markdown.md)
-    * [Infinitely Scroll an Ecommerce Site](features/browser-requests/api-playground-examples/infinitely-scroll-an-ecommerce-site.md)
+    * [Infinitely Scroll an E-commerce Site](features/browser-requests/api-playground-examples/infinitely-scroll-an-e-commerce-site.md)
     * [Capture a Full-Height Screenshot](features/browser-requests/api-playground-examples/capture-a-full-height-screenshot.md)
     * [Automated Form Filling](features/browser-requests/api-playground-examples/automated-form-filling.md)
+    * [Parse PDF to Structured JSON](features/browser-requests/api-playground-examples/parse-pdf-to-structured-json.md)
+    * [Parse HTML Form to Structured JSON](features/browser-requests/api-playground-examples/parse-html-form-to-structured-json.md)
 * [Mapping Requests](features/mapping-requests.md)
 
 ## API Reference

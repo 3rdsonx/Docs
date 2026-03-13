@@ -4,7 +4,7 @@ description: >-
   ecommerce site whilst recording the interaction.
 ---
 
-# Infinitely Scroll an Ecommerce Site
+# Infinitely Scroll an E-commerce Site
 
 _The following example is a request we've prebuilt to show you Gaffa's capabilities on our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=infinite_scroll)_**.**_
 
@@ -12,7 +12,7 @@ Gaffa automates infinite scrolling on dynamic pages, such as e-commerce storefro
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site in the e-commerce site simulator, which features an infinitely scrolling storefront. It will wait for and dismiss a dialogue box, wait for a product to load and then scroll down the page for a maximum of 20 seconds - if new items load, it will keep scrolling.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site in the e-commerce site simulator, featuring an infinitely scrolling storefront. It will wait for and dismiss a dialog box, wait for a product to load, and then scroll down the page for a maximum of 20 seconds - if new items load, it will keep scrolling.
 
 ```json
 {

@@ -8,11 +8,11 @@ description: >-
 
 _The following example is a request we've prebuilt to show you Gaffa's capabilities on our_ [_demo site._](https://demo.gaffa.dev) _**You can run this request right now in the**_ [_**Gaffa API Playground**_](https://gaffa.dev/dashboard/playground?templateId=screenshot_ecommerce)_**.**_
 
-Gaffa can also capture screenshots at any point during your interaction, for use in your app or to determine exactly what was shown at a given point in time. You can capture just what is shown, as if you were looking at the screen or the full height of the page.
+Gaffa can also capture screenshots at any point during your interaction for use in your app or to work out exactly what was shown at a given time. You can capture just what is shown, as if you were looking at the screen or the full height of the page.
 
 ## API Request
 
-The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the ecommerce page with 20 items, wait for and dismiss the dialogue, scroll to the bottom of the page and capture a full-height screenshot.
+The request below uses the [POST endpoint](../../../api-reference/post-v1-browser-requests.md) to open the demo site on the ecommerce page with 20 items, wait for and dismiss the dialog, scroll to the bottom of the page, and capture a full height screenshot.
 
 ```json
 {

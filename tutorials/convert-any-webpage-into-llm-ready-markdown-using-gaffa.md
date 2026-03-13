@@ -32,7 +32,7 @@ OPENAI_API_KEY=your_openai_api_key
 
 ### Convert a webpage to Markdown
 
-In the code below, we define a function that takes a URL as input, makes a POST request to the Gaffa API, invoking the [generate\_markdown](../features/browser-requests/actions/generate-markdown.md) action, which uses the browser rendering engine to extract the main content of the page and convert it into markdown.
+In the code below, we define a function that takes a URL as input, makes a POST request to the Gaffa API, invoking the [generate\_markdown](../features/browser-requests/actions/generate-markdown.md) action, which uses the browser rendering engine to extract the page's main content and convert it to markdown.
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -87,7 +87,7 @@ def fetch_markdown_with_gaffa(url):
 
 ### Ask questions using OpenAI
 
-Now that we have the markdown content, we can ask questions about it using the OpenAI API. The function below takes the markdown content and a question as input and uses the OpenAI API to generate a summary based on the provided content. In this case, we are using the [gpt-3.5-turbo](https://platform.openai.com/docs/models) model, but you can choose any other model.
+Now that we have the markdown content, we can ask questions about it using the OpenAI API. The function below takes markdown content and a question as input, then uses the OpenAI API to generate a summary based on the provided content. In this case, we are using the [gpt-3.5-turbo](https://platform.openai.com/docs/models) model, but you can choose any other model.
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -113,7 +113,7 @@ The markdown becomes the model’s context, enabling accurate answers about the 
 
 ### User Interaction and Execution
 
-Having defined the functions, we can now create a simple command-line interface that allows users to input a URL and ask questions about the content.
+Having defined the functions, we can now create a simple command-line interface that lets users enter a URL and ask questions about its content.
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -150,4 +150,4 @@ To run the script, simply execute it in your terminal:
 python your_script_name.py
 ```
 
-With your script running, you can enter any URL of any web page, and the script will fetch the markdown content and allow you to ask questions about it.
+With your script running, you can enter any web page URL, and it will fetch the markdown content and let you ask questions about it.
