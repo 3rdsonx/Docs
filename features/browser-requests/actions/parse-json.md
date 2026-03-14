@@ -4,8 +4,6 @@
 **Paid Action:** This action consumes credits based on the amount of content parsed. See more [below](parse-json.md#pricing).
 {% endhint %}
 
-{% include "../../../.gitbook/includes/beta-feature.md" %}
-
 **Type:** `parse_json`
 
 The `parse_json` action extracts data from web pages and online PDFs. It uses AI to parse web content from text into a pre-defined data schema and return it as a JSON object.
