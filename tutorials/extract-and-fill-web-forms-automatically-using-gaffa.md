@@ -292,7 +292,7 @@ if __name__ == "__main__":
 
 ### Full Script
 
-The full script is available to download from the [Gaffa Python Examples GitHub repo](https://gist.github.com/larymak/954268a01a3c728a4c01dd2ef973a36d).
+The full script is available to download from the [Gaffa Python Examples GitHub repo](https://github.com/GaffaAI/GaffaPythonExamples/blob/main/scripts/AutomatedFormFilling/automated_form_filling.py).
 
 ### Running the Script
 
