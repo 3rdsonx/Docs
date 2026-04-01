@@ -53,32 +53,34 @@ Each field in the `fields` array has:
 ### Inline Schema Example
 
 ```json
-{
-  "type": "parse_json",
-  "data_schema": {
-    "name": "ArticleMetadata",
-    "description": "Extract metadata from an article",
-    "fields": [
-      {
-        "type": "string",
-        "name": "title",
-        "description": "Article title"
-      },
-      {
-        "type": "string",
-        "name": "author",
-        "description": "Author name"
-      },
-      {
-        "type": "datetime",
-        "name": "published",
-        "description": "Publication date"
-      }
-    ]
-  },
-  "model": "gpt-4o-mini",
-  "output_type": "inline"
-}
+"actions": [
+  {
+    "type": "parse_json",
+    "data_schema": {
+      "name": "ArticleMetadata",
+      "instruction": "Extract metadata from an article",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "description": "Article title"
+        },
+        {
+          "type": "string",
+          "name": "author",
+          "description": "Author name"
+        },
+        {
+          "type": "datetime",
+          "name": "published",
+          "description": "Publication date"
+        }
+      ]
+    },
+    "model": "gpt-4o-mini",
+    "output_type": "inline"
+  }
+]
 ```
 
 This example shows:
@@ -103,7 +105,7 @@ curl -L \
   --header 'Content-Type: application/json' \
   --data '{
     "name": "ProductInfo",
-    "description": "Extract product details from e-commerce pages",
+    "instruction": "Extract product details from e-commerce pages",
     "fields": [
       {
         "type": "string",
@@ -196,7 +198,7 @@ curl -L \
   --data '{
     "id": "schema_abc123xyz",
     "name": "ProductInfo",
-    "description": "Extract detailed product information from e-commerce pages",
+    "instruction": "Extract detailed product information from e-commerce pages",
     "fields": [
       {
         "type": "string",
@@ -238,7 +240,7 @@ Simple List Extraction
 ```json
 {
   "name": "TagList",
-  "description": "Extract article tags",
+  "instruction": "Extract article tags",
   "fields": [
     {
       "type": "array",
@@ -261,7 +263,7 @@ Simple List Extraction
 ```json
 {
   "name": "ProductWithReviews",
-  "description": "Product details with nested review data",
+  "instruction": "Product details with nested review data",
   "fields": [
     {
       "type": "string",

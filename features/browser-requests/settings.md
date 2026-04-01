@@ -85,7 +85,7 @@ Start with `max_media_bandwidth: 0` for maximum savings, then adjust upward only
 }
 ```
 
-**Learn more:** See our detailed guide on optimising browser requests with max\_media\_bandwidth, including real-world testing, use cases, and best practices.
+**Learn more:** See our detailed [guide](https://gaffa.dev/blog/how-to-slash-your-gaffa-credit-costs-by-40-percent) on optimising browser requests with max\_media\_bandwidth, including real-world testing, use cases, and best practices.
 
 ***
 
