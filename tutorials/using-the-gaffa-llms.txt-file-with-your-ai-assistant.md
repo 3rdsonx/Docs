@@ -6,15 +6,11 @@ In this tutorial, we'll walk you through how to use the `llms.txt` file to build
 
 #### Step 1: Get the LLMs.txt File
 
-Download or open the file at [https://gaffa.dev/docs/llms-full.txt](https://gaffa.dev/docs/llms-full.txt). It contains a concise overview of the Gaffa API, including available endpoints, actions, and example payloads.
+Download or open the file at [https://gaffa.dev/docs/llms.txt](https://gaffa.dev/docs/llms.txt). It contains a concise overview of the Gaffa API, including available endpoints, actions, and example payloads.
 
 #### Step 2: Load It Into Your AI Assistant
 
 Start a new chat with ChatGPT, Claude, or your preferred AI assistant, then paste the full contents of the file into the conversation. This gives the assistant accurate, up-to-date context about the Gaffa API before you ask it anything.
-
-{% hint style="info" %}
-**Note:** If the file is too long to paste in one go, see the tip at the bottom of this page on how to send it in chunks.
-{% endhint %}
 
 #### Step 3: Ask the Assistant to Write Your Script
 
@@ -103,9 +99,3 @@ You'll see the job state printed in your terminal and a downloaded Markdown file
 #### Step 5: Extend and Customise
 
 From here, you can modify the `actions` list to use other supported operations, such as `generate_pdf`, `screenshot`, or `extract_text`. You can make these changes manually, or simply ask your AI assistant to adapt the script for you. Since it still has the `llms.txt` context loaded, it can adjust the code to your specific requirements without needing any further explanation.
-
-{% hint style="info" %}
-#### Tip: What to Do If the File Is Too Long to Paste
-
-If your AI assistant has an input limit and can't accept the full file at once, paste it in chunks. Label each chunk as _"Part 1 of 3"_, _"Part 2 of 3"_, and so on, and ask the assistant to acknowledge each one before you send the next. Once all parts are sent, let it know you're done and ask it to confirm it has the full context. After that, you're ready to start building.
-{% endhint %}
