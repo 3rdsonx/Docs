@@ -1,10 +1,10 @@
 ---
 description: >-
-  An example request that uses Gaffa to extract structured data from a table on
-  a webpage
+  An example request that uses Gaffa to extract structured data (JSON) from a
+  table on a webpage
 ---
 
-# Parse an HTML Table to Structure JSON
+# Parse an HTML Table to JSON
 
 The following example is a prebuilt request that demonstrates Gaffa's capabilities on our [demo site](https://demo.gaffa.dev/). You can run this request right here in the [Gaffa API Playground](https://gaffa.dev/dashboard/playground).&#x20;
 
