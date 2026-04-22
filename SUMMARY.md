@@ -34,6 +34,7 @@
     * [Automated Form Filling](features/browser-requests/api-playground-examples/automated-form-filling.md)
     * [Parse PDF to Structured JSON](features/browser-requests/api-playground-examples/parse-pdf-to-structured-json.md)
     * [Parse HTML Form to Structured JSON](features/browser-requests/api-playground-examples/parse-html-form-to-structured-json.md)
+    * [Parse an HTML Table to Structure JSON](features/browser-requests/api-playground-examples/parse-an-html-table-to-structure-json.md)
 * [Mapping Requests](features/mapping-requests.md)
 
 ## API Reference

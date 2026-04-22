@@ -1,6 +1,10 @@
-# Parse PDF to Structured JSON
+---
+description: >-
+  An example request that uses Gaffa to extract structured data from an online
+  PDF.
+---
 
-An example request that uses Gaffa to extract structured data from an online PDF.
+# Parse PDF to Structured JSON
 
 The following example is a request we've pre-built to show you Gaffa's capabilities against our [demo site](https://demo.gaffa.dev). You can run this request right here in the [Gaffa API Playground](https://gaffa.dev/dashboard/playground).
 
@@ -110,7 +114,13 @@ The request below uses the [POST endpoint](https://gaffa.dev/docs/api-reference/
 
 ## Actions
 
+{% content-ref url="../actions/download-file.md" %}
+[download-file.md](../actions/download-file.md)
+{% endcontent-ref %}
 
+{% content-ref url="../actions/parse-json.md" %}
+[parse-json.md](../actions/parse-json.md)
+{% endcontent-ref %}
 
 ## Response
 

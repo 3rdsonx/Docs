@@ -1,6 +1,10 @@
-# Parse HTML Form to Structured JSON
+---
+description: >-
+  An example request that uses Gaffa to analyze a web form and extract all input
+  fields, their labels, types, and properties into structured JSON.
+---
 
-An example request that uses Gaffa to analyze a web form and extract all input fields, their labels, types, and properties into structured JSON.
+# Parse HTML Form to Structured JSON
 
 The following example is a request we've pre-built to show you Gaffa's capabilities against our [demo site](https://demo.gaffa.dev). You can run this request right here in the [Gaffa API Playground](https://gaffa.dev/dashboard/playground).
 
@@ -182,7 +186,9 @@ The request below uses the [POST endpoint](https://gaffa.dev/docs/api-reference/
 
 ## Actions
 
-Read the full documentation for these actions [here](../actions/parse-json.md).
+{% content-ref url="../actions/parse-json.md" %}
+[parse-json.md](../actions/parse-json.md)
+{% endcontent-ref %}
 
 ## Response
 
