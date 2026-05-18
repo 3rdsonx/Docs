@@ -128,8 +128,6 @@ You can set `block_ads` in two ways:
 * "block\_ads": false — Ad blocking disabled (default)
 * "block\_ads": true — Ad blocking enabled
 
-For real-world benchmarks and best practices, see our guides on ~~speeding up your requests with add blocking.~~
-
 **Example:**
 
 ```json
