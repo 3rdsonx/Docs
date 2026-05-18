@@ -143,6 +143,41 @@ We currently support ten different types of actions, each designed for specific 
 
 ***
 
+## Ad Blocking&#x20;
+
+**Parameter:** `block_ads` (boolean)
+
+{% hint style="danger" %}
+Beta feature: Ad blocking is available to all users but is currently in beta. If you encounter ad networks that aren't being blocked, [get in touch](https://gaffa.dev/contact), and we'll add them.
+{% endhint %}
+
+If you are automating or scraping content on ad-heavy websites, third-party ad network requests can slow down your page load significantly, even though you don't need them. By enabling `block_ads` , Gaffa intercepts and immediately aborts requests to known ad-serving domains before they load, reducing page load times without affecting the core page content.&#x20;
+
+### Setting options
+
+You can set `block_ads` in two ways:
+
+* "block\_ads": false — Ad blocking disabled (default)
+* "block\_ads": true — Ad blocking enabled
+
+For real-world benchmarks and best practices, see our guides on ~~speeding up your requests with add blocking.~~
+
+**Example:**
+
+```json
+{
+  "url": "https://www.allrecipes.com",
+  "settings": {
+    "block_ads": true,
+    "actions": [
+      {
+        "type": "capture_dom"
+      }
+    ]
+  }
+}
+```
+
 ## Complete Example
 
 Here's a browser request using multiple settings parameters:
@@ -157,6 +192,7 @@ Here's a browser request using multiple settings parameters:
     "record_request": false,
     "max_media_bandwidth": 0,
     "time_limit": 60000,
+    "block_ads": true,
     "actions": [
       {
         "type": "wait",
@@ -172,4 +208,3 @@ Here's a browser request using multiple settings parameters:
   }
 }
 ```
-
