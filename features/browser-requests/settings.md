@@ -85,7 +85,7 @@ Start with `max_media_bandwidth: 0` for maximum savings, then adjust upward only
 }
 ```
 
-**Learn more:** See our detailed [guide](https://gaffa.dev/blog/how-to-slash-your-gaffa-credit-costs-by-40-percent) on optimising browser requests with max\_media\_bandwidth, including real-world testing, use cases, and best practices.
+**Learn more:** See our detailed [guide](https://gaffa.dev/blog/how-to-slash-your-gaffa-credit-costs-by-40-percent) on optimizing browser requests with max\_media\_bandwidth, including real-world testing, use cases, and best practices.
 
 ***
 
@@ -93,9 +93,9 @@ Start with `max_media_bandwidth: 0` for maximum savings, then adjust upward only
 
 **Parameter:** `time_limit` (integer)
 
-Using the `time_limit` setting caps the maximum running time of the request in milliseconds. If this time expires, all incomplete actions will be cancelled, and the request will return an error.
+Using the `time_limit` setting caps the maximum running time of the request in milliseconds. If this time expires, all incomplete actions will be canceled, and the request will return an error.
 
-This cap must be less than the maximum request running time specified in your plan; if not set, it defaults to this value.
+This cap must be less than the maximum request runtime specified in your plan; if not set, it defaults to that value.
 
 **Example:**
 
@@ -105,38 +105,6 @@ This cap must be less than the maximum request running time specified in your pl
   "settings": {
     "time_limit": 30000,
     "actions": [...]
-  }
-}
-```
-
-***
-
-## Actions
-
-**Parameter:** `actions` (array)
-
-The `actions` parameter defines the specific tasks you want Gaffa to perform on the page once it loads. Actions are executed in the order they appear in your array and can include tasks such as waiting for elements, capturing screenshots, generating Markdown, printing to PDF, and more.
-
-We currently support ten different types of actions, each designed for specific automation needs. [Learn more about all available actions here](actions/).
-
-**Example:**
-
-```json
-{
-  "url": "https://example.com",
-  "settings": {
-    "actions": [
-      {
-        "type": "wait",
-        "selector": "table"
-      },
-      {
-        "type": "print",
-        "size": "A4",
-        "margin": 20,
-        "orientation": "portrait"
-      }
-    ]
   }
 }
 ```
@@ -177,6 +145,40 @@ For real-world benchmarks and best practices, see our guides on ~~speeding up yo
   }
 }
 ```
+
+***
+
+## Actions
+
+**Parameter:** `actions` (array)
+
+The `actions` parameter defines the specific tasks you want Gaffa to perform on the page once it loads. Actions are executed in the order they appear in your array and can include tasks such as waiting for elements, capturing screenshots, generating Markdown, printing to PDF, and more.
+
+We currently support ten different types of actions, each designed for specific automation needs. [Learn more about all available actions here](actions/).
+
+**Example:**
+
+```json
+{
+  "url": "https://example.com",
+  "settings": {
+    "actions": [
+      {
+        "type": "wait",
+        "selector": "table"
+      },
+      {
+        "type": "print",
+        "size": "A4",
+        "margin": 20,
+        "orientation": "portrait"
+      }
+    ]
+  }
+}
+```
+
+***
 
 ## Complete Example
 
