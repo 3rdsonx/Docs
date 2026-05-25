@@ -39,6 +39,7 @@
 
 ## API Reference
 
+* [API Reference](api-reference/README.md)
 * [API Authentication](api-reference/api-authentication.md)
 * [POST v1/browser/requests](api-reference/post-v1-browser-requests.md)
 * [GET v1/browser/requests/{id}](api-reference/get-v1-browser-requests-id.md)
