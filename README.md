@@ -26,4 +26,4 @@ Gaffa is ready to power your web automations:
 
 ## Stay up to date
 
-We'll be sporadically announcing updates and new features in our newsletter - [sign up here](https://gaffa.dev/#newsletter).
+We'll be announcing updates and new features in our newsletter - [sign up here](https://gaffa.dev/#newsletter).
