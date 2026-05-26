@@ -48,7 +48,7 @@ Here are all the sample requests we've created for use in the API Playground.
 {% step %}
 ## Building your own browser requests
 
-Once you have a paid account and are ready to start building your own browser requests, you'll want to read about all the other [actions ](features/browser-requests/actions/)you can use for your solution, as well as how you can easily use [proxy servers](features/browser-requests/#proxy-servers), [our cache](features/browser-requests/#caching), and the [other endpoints that are part of the API](/broken/pages/Jer3HvlR3KNzesxDbiIL)
+Once you have a paid account and are ready to start building your own browser requests, you'll want to read about all the other [actions ](features/browser-requests/actions/)you can use for your solution, as well as how you can easily use [proxy servers](features/browser-requests/#proxy-servers), [our cache](features/browser-requests/#caching), and the [other endpoints that are part of the API](api-reference/README.md)
 {% endstep %}
 {% endstepper %}
 
