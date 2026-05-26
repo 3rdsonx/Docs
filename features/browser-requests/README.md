@@ -61,11 +61,11 @@ We believe your AI Agents should be able to use the internet exactly how humans 
 
 [**Examples**](api-playground-examples/) — View pre-built requests and start using them in the API Playground
 
-[**API Reference**](../../api-reference/README.md)— Complete endpoint documentation and technical details
+[**API Reference**](../../api-reference/)— Complete endpoint documentation and technical details
 
 ### Examples
 
-We've created a number of sample browser requests you can read about [here](https://claude.ai/chat/1ed94689-6df3-4a05-b941-a11a69af770d), or you can jump straight into the [API Playground](https://gaffa.dev/dashboard/playground) to run them right now.
+We've created a number of sample browser requests you can read about [here](api-playground-examples/), or you can jump straight into the [API Playground](https://gaffa.dev/dashboard/playground) to run them right now.
 
 ### API Endpoints
 

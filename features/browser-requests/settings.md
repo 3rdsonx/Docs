@@ -58,7 +58,7 @@ This setting is particularly useful for:
 * **SEO and content analysis** — Analyze page structure, headings, and text without media files
 
 {% hint style="success" %}
-**Performance Benefits:** Testing on image-heavy news sites showed up to **43% token savings** with no loss of text data. Sites with more media content see even greater savings in both cost and request speed.&#x20;
+**Performance Benefits:** Testing on image-heavy news sites showed up to **43% token savings** with no loss of text data. Sites with more media content see even greater savings in both cost and request speed.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -111,7 +111,7 @@ This cap must be less than the maximum request runtime specified in your plan; i
 
 ***
 
-## Ad Blocking&#x20;
+## Ad Blocking
 
 **Parameter:** `block_ads` (boolean)
 
@@ -119,7 +119,7 @@ This cap must be less than the maximum request runtime specified in your plan; i
 Beta feature: Ad blocking is available to all users but is currently in beta. If you encounter ad networks that aren't being blocked, [get in touch](https://gaffa.dev/contact), and we'll add them.
 {% endhint %}
 
-If you are automating or scraping content on ad-heavy websites, third-party ad network requests can slow down your page load significantly, even though you don't need them. By enabling `block_ads` , Gaffa intercepts and immediately aborts requests to known ad-serving domains before they load, reducing page load times without affecting the core page content.&#x20;
+If you are automating or scraping content on ad-heavy websites, third-party ad network requests can slow down your page load significantly, even though you don't need them. By enabling `block_ads` , Gaffa intercepts and immediately aborts requests to known ad-serving domains before they load, reducing page load times without affecting the core page content.
 
 ### Setting options
 
@@ -152,7 +152,7 @@ You can set `block_ads` in two ways:
 
 The `actions` parameter defines the specific tasks you want Gaffa to perform on the page once it loads. Actions are executed in the order they appear in your array and can include tasks such as waiting for elements, capturing screenshots, generating Markdown, printing to PDF, and more.
 
-We currently support ten different types of actions, each designed for specific automation needs. [Learn more about all available actions here](actions/).
+We support different types of actions, each designed for specific automation needs. [Learn more about all available actions here](actions/).
 
 **Example:**
 
