@@ -27,3 +27,5 @@ Gaffa is ready to power your web automations:
 ## Stay up to date
 
 We'll be announcing updates and new features in our newsletter - [sign up here](https://gaffa.dev/#newsletter).
+
+[Slack notification test — broken link](/broken/pages/test-slack-notification)
