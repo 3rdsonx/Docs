@@ -13,9 +13,18 @@ This repo runs a link check on every push and pull request.
 2. In GitHub: **Settings → Actions → General** — allow workflows (if not already enabled)
 3. The check runs automatically on push and PR
 
-## Slack setup (#docs channel)
+### Who creates the webhook?
 
-GitHub does **not** talk to GitBook Agent for notifications. Slack alerts come from this workflow when the check fails.
+| Role | What they do |
+|------|----------------|
+| **Slack** (James, workspace admin, or channel admin) | Creates the Incoming Webhook for `#docs` — needs permission to add apps/integrations in your Slack workspace |
+| **GitHub** (you or any repo admin) | Adds the webhook URL as the `SLACK_WEBHOOK_URL` repository secret |
+
+You do **not** need to own the channel to add the secret on GitHub, but you **do** need someone with Slack permissions to generate the webhook URL first. If “Incoming Webhooks” is restricted at your company, ask James or IT.
+
+The webhook URL is a secret — share it only via your team’s secure channel (1Password, admin DM), not in Slack public messages or in the repo.
+
+### Steps
 
 1. In Slack: create or use channel `#docs`
 2. Create an **Incoming Webhook** for that channel:
