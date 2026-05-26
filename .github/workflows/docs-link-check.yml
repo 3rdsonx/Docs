@@ -5,15 +5,17 @@ on:
     branches: ['**']
   pull_request:
 
-permissions:
-  contents: read
+permissions: {}
 
 jobs:
   check-links:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        # Pinned to avoid supply-chain risk (tag mutability)
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
 
       - name: Check for broken docs links
         run: |
@@ -21,7 +23,12 @@ jobs:
           .github/scripts/check-docs-links.sh .
 
       - name: Notify Slack on failure
-        if: failure()
+        if: >-
+          failure() &&
+          (
+            github.event_name == 'push' ||
+            (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)
+          )
         continue-on-error: true
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
