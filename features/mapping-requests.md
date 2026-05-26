@@ -51,7 +51,7 @@ For the Gaffa site, this will return the following response:
 <strong>}
 </strong></code></pre>
 
-As you'll see from the [API Reference section](/broken/pages/Jer3HvlR3KNzesxDbiIL) of the site, there are also requests to retrieve site mapping requests for your account.
+As you'll see from the [API Reference section](../api-reference/README.md) of the site, there are also requests to retrieve site mapping requests for your account.
 
 ## Pricing
 
