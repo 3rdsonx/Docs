@@ -61,7 +61,7 @@ We believe your AI Agents should be able to use the internet exactly how humans 
 
 [**Examples**](api-playground-examples/) — View pre-built requests and start using them in the API Playground
 
-[**API Reference** ](/broken/pages/Jer3HvlR3KNzesxDbiIL)— Complete endpoint documentation and technical details
+[**API Reference**](../../api-reference/README.md)— Complete endpoint documentation and technical details
 
 ### Examples
 
@@ -70,4 +70,3 @@ We've created a number of sample browser requests you can read about [here](http
 ### API Endpoints
 
 Check out our API reference for more details on the available endpoints, particularly [those you can use to query for past requests by ID or status](../../api-reference/get-v1-browser-requests.md).
-
