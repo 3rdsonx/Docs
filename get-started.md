@@ -55,5 +55,3 @@ Once you have a paid account and are ready to start building your own browser re
 ## <sup>**Want to build faster with AI assistance?**</sup>
 
 You can use Gaffa's [`llms.txt`](https://gaffa.dev/docs/llms-full.txt) file to give AI assistants like ChatGPT or Claude instant, accurate context about the Gaffa API, so they can generate working code for you straight away, without you having to explain the API yourself. [Learn how to use the Gaffa LLMs.txt file →](https://gaffa.dev/blog/let-your-ai-assistant-write-your-gaffa-code)
-
-[Slack notification test — broken link](/broken/pages/test-slack-notification)
